@@ -41,6 +41,7 @@ ATT.SpreadMult = 1.1
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: 5d6e695fa4b936359b35d852
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_56")
 
 
@@ -79,6 +80,7 @@ ATT.Num = 8
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: 5d6e69b9a4b9361bc8618958
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_62")
 
 
@@ -117,6 +119,7 @@ ATT.VisualRecoilMult = 1.15
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: 5d6e69c7a4b9360b6c0d54e4
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_73")
 
 
@@ -155,6 +158,7 @@ ATT.Num = 8
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: 5a38ebd9c4a282000d722a5b
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_75")
 
 
@@ -194,6 +198,7 @@ ATT.SpreadMult = 0.075
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: 5d6e6a5fa4b93614ec501745
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_devastator")
 
 
@@ -238,6 +243,7 @@ ATT.ActivateElements = {"eft_ammo_20x70_devastator"}
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_elephant")
 
 
@@ -293,6 +299,7 @@ ATT.ActivateElements = {"eft_ammo_20x70_poleva6u"}
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_explosive")
 
 
@@ -334,6 +341,7 @@ ATT.VisualRecoilMult = 1.25
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_flechplus")
 
 
@@ -373,6 +381,7 @@ ATT.SpreadMult = 0.11
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: 5d6e6a53a4b9361bd473feec
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_poleva3")
 
 
@@ -412,6 +421,7 @@ ATT.SpreadMult = 0.11
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: 5d6e6a42a4b9364f07165f52
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_poleva6u")
 
 
@@ -451,6 +461,7 @@ ATT.SpreadMult = 0.07
 ATT.Category = {"eft_ammo_20x70"}
 
 
+-- EFT ID: 5d6e6a05a4b93618084f58d0
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_star")
 
 
@@ -479,7 +490,6 @@ ATT.Description = [[The TOZ 002 pistol grip for the TOZ-106 bolt-action shotgun.
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -488,6 +498,7 @@ ATT.Category = {"eft_toz106_pgrip"}
 
 
 
+-- EFT ID: 5a38eecdc4a282329a73b512
 ARC9.LoadAttachment(ATT, "eft_grip_toz106")
 
 
@@ -506,7 +517,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 2
@@ -515,6 +525,7 @@ ATT.Category = {"eft_toz106_mag"}
 
 
 
+-- EFT ID: 5a38ee51c4a282000c5a955c
 ARC9.LoadAttachment(ATT, "eft_mag_toz106_2")
 
 
@@ -532,7 +543,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 4
@@ -541,6 +551,7 @@ ATT.Category = {"eft_toz106_mag"}
 
 
 
+-- EFT ID: 5a38ed75c4a28232996e40c6
 ARC9.LoadAttachment(ATT, "eft_mag_toz106_4")
 
 
@@ -558,7 +569,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 5
@@ -567,6 +577,7 @@ ATT.Category = {"eft_toz106_mag"}
 
 
 
+-- EFT ID: 5c6161fb2e221600113fbde5
 ARC9.LoadAttachment(ATT, "eft_mag_toz106_5")
 
 
@@ -594,6 +605,7 @@ ATT.Category = {"eft_toz106_mount"}
 
 
 
+-- EFT ID: 5c6162682e22160010261a2b
 ARC9.LoadAttachment(ATT, "eft_mount_toz106_mountdove")
 
 
@@ -621,6 +633,7 @@ ATT.Category = {"eft_toz106_mount2"}
 
 
 
+-- EFT ID: 5c61627a2e22160012542c55
 ARC9.LoadAttachment(ATT, "eft_mount_toz106_mountrail")
 
 
@@ -639,7 +652,6 @@ ATT.HasGrip = true
 ATT.HasReciever = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.RecoilMult = 0.66
 ATT.VisualRecoilMult = 0.66
@@ -656,6 +668,7 @@ ATT.Category = {"eft_toz106_stock"}
 
 
 
+-- EFT ID: 5adf23995acfc400185c2aeb
 ARC9.LoadAttachment(ATT, "eft_stock_toz106_full")
 
 
@@ -670,7 +683,6 @@ ATT.Icon = Material("entities/eft_toz106_attachments/gpcp.png", "mips smooth")
 ATT.Description = [[A stripped-down version of the FAB Defense GPCP cheek pad for the TOZ-106 folding stock.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -679,6 +691,7 @@ ATT.Category = {"eft_toz106_gpcp"}
 
 
 
+-- EFT ID: 626a8ae89e664a2e2a75f409
 ARC9.LoadAttachment(ATT, "eft_stock_toz106_gpcp")
 
 
@@ -697,7 +710,6 @@ ATT.HasGrip = true
 ATT.HasReciever = true
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 
 ATT.RecoilMult = 0.58
 ATT.VisualRecoilMult = 0.58
@@ -713,6 +725,7 @@ ATT.Category = {"eft_toz106_stock"}
 
 
 
+-- EFT ID: 5c99f3592e221644fc633070
 ARC9.LoadAttachment(ATT, "eft_stock_toz106_mosin")
 
 
@@ -732,7 +745,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasReciever = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7", ["Recoil while unfolded"] = "-38%" }
 
 -- ATT.RecoilMult = 0.62
 -- ATT.VisualRecoilMult = 0.62
@@ -768,5 +780,6 @@ ATT.ToggleStats = {
 }
 
 
+-- EFT ID: 5a38ef1fc4a282000b1521f6
 ARC9.LoadAttachment(ATT, "eft_stock_toz106_std")
 

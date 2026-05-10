@@ -34,6 +34,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5b363e1b5acfc4771e1c5e80
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_threadapadter")
 
 ///////////////////////////////////////      eft_muzzle_12g_chokeapadter
@@ -68,6 +69,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b363dea5acfc4771e1c5e7e
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_chokeapadter")
 
 ///////////////////////////////////////      eft_muzzle_12g_mecyl
@@ -84,7 +86,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_12g_me_muzzle_adapter.mdl"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 1.0025
 
@@ -100,6 +101,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c0111ab0db834001966914d
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_mecyl")
 
 ///////////////////////////////////////      eft_muzzle_12g_rtc
@@ -123,6 +125,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.0025
 
 ATT.Category = {"eft_12ga_muzzle"}
 
+-- EFT ID: 560838c94bdc2d77798b4569
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_rtc")
 
 
@@ -142,7 +145,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_saiga12_css_monster_caw_l
 
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 ATT.HeatCapacityMult = 0.98
@@ -155,6 +157,7 @@ ATT.BarrelLengthAdd = 2
 ATT.Category = {"eft_saiga12_muzzle", "eft_12k_cylinder"}
 
 
+-- EFT ID: 59fb137a86f7740adb646af1
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_claw")
 
 
@@ -173,7 +176,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_12g_red_heat_gk-02_12g.mdl"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.86
 ATT.VisualRecoilMult = 0.86
 ATT.HeatCapacityMult = 0.983
@@ -187,6 +189,7 @@ ATT.BarrelLengthAdd = 2
 ATT.Category = {"eft_saiga12_muzzle", "eft_12k_cylinder"}
 
 
+-- EFT ID: 58272d7f2459774f6311ddfd
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_gk02")
 
 
@@ -206,7 +209,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_12g_hexagon_12k.mdl"
 
 
 ATT.EFTErgoAdd = -27
-ATT.CustomCons = { Ergonomics = "-27" }
 ATT.RecoilMult = 0.84
 ATT.VisualRecoilMult = 0.84
 ATT.SpreadMult = 1.01
@@ -225,6 +227,7 @@ ATT.Silencer = true
 ATT.Category = {"eft_saiga12_muzzle", "eft_12k_cylinder"}
 
 
+-- EFT ID: 59c0ec5b86f77435b128bfca
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_hexasup")
 
 
@@ -244,7 +247,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_base_silencerco_salvo_1
 
 
 ATT.EFTErgoAdd = -28
-ATT.CustomCons = { Ergonomics = "-28" }
 ATT.RecoilMult = 0.82
 ATT.VisualRecoilMult = 0.82
 ATT.SpreadMult = 0.93
@@ -263,6 +265,7 @@ ATT.Silencer = true
 ATT.Category = {"eft_salvo12"}
 
 
+-- EFT ID: 5b363dd25acfc4001a598fd2
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_salvo")
 
 
@@ -285,7 +288,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.FoldSights = true
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.Sights = {
     {
@@ -305,4 +307,5 @@ ATT.HoloSightColorable = false
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
+-- EFT ID: 609b9e31506cf869cf3eaf41
 ARC9.LoadAttachment(ATT, "eft_optic_targetring")

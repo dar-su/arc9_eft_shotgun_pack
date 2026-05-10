@@ -17,6 +17,7 @@ ATT.Category = {"eft_saiga12_dustcover"}
 
 
 
+-- EFT ID: 57616c112459773cce774d66
 ARC9.LoadAttachment(ATT, "eft_saiga12_dustcover_std")
 
 
@@ -35,7 +36,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
@@ -108,6 +108,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5f63418ef5750b524b45f116
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_bravo18")
 
 
@@ -127,7 +128,6 @@ ATT.HasHG = true
 ATT.Category = {"eft_saiga12_handguard"}
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.021
@@ -160,6 +160,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6086b5731246154cad35d6c7
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_custom340")
 
 
@@ -191,6 +192,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6086b5392535c57a13424d70
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_custom340_mount")
 
 
@@ -209,13 +211,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.HeatCapacityMult = 1.026
 
 ATT.Category = {"eft_saiga12_handguard"}
 
 
 
+-- EFT ID: 576169e62459773c69055191
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_std")
 
 
@@ -237,7 +239,6 @@ ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.036
@@ -287,6 +288,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5827272a24597748c74bdeea
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_utg_pro_long")
 
 
@@ -303,7 +305,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.017
@@ -358,6 +359,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 58272b392459774b4c7b3ccd
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_utg_pro_short")
 
 
@@ -376,7 +378,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_saiga12_mag"}
 
 ATT.EFTErgoAdd = -26
-ATT.CustomCons = { Ergonomics = "-26" }
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
@@ -388,6 +389,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_drum.mdl
 
 ATT.ActivateElements = {"magdrum"}
 
+-- EFT ID: 5cf8f3b0d7f00c00217872ef
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_powermag")
 
 
@@ -406,7 +408,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_saiga12_mag"}
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
@@ -416,6 +417,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_sai02.md
 
 ATT.ActivateElements = {"mag10"}
 
+-- EFT ID: 5a966f51a2750c00156aacf6
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_promag")
 
 
@@ -434,7 +436,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_saiga12_mag"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 5
@@ -444,6 +445,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_std.mdl"
 
 ATT.ActivateElements = {"mag5"}
 
+-- EFT ID: 57616a9e2459773c7a400234
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_std")
 
 
@@ -460,11 +462,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Category = {"eft_saiga12_muzzle"}
 
 
+-- EFT ID: 576167ab2459773cad038c43
 ARC9.LoadAttachment(ATT, "eft_saiga12_muzzle_std")
 
 
@@ -494,6 +496,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 58272b842459774abc128d50
 ARC9.LoadAttachment(ATT, "eft_saiga12_rs_mount")
 
 
@@ -512,6 +515,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_saiga12_rs"}
 
 
+-- EFT ID: 57a9b9ce2459770ee926038d
 ARC9.LoadAttachment(ATT, "eft_saiga12_rs_std")
 
 
@@ -528,7 +532,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.66
 ATT.VisualRecoilMult = 0.66
 
@@ -545,6 +548,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 57616ca52459773c69055192
 ARC9.LoadAttachment(ATT, "eft_saiga12_stock_std")
 
 -- ///////////////////////////////////////      eft_ammo_12x70_mixed_50bmg_p3
@@ -601,7 +605,7 @@ ATT.Num = 1
 ATT.Category = {"eft_ammo_12x70_saiga12only"}
 -- ATT.Folder = "Mixed loads"
 
-
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_mixed_50bmg_p3")
 
 
@@ -620,7 +624,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.017
@@ -674,6 +677,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 674fe57721a9aa6be6045b96
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titan")
 
 ///////////////////////////////////////      eft_saiga12_handguard_titantop
@@ -723,6 +727,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 674fe89a4472d471fb0f07d8
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titantop")
 
 ///////////////////////////////////////      eft_saiga12_handguard_titanrecuver
@@ -738,7 +743,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.ActivateElements = {"nodovetail"}
 ATT.Category = {"eft_saiga12_titan_backmount"}
@@ -761,6 +765,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 674fe8b9362ea1f88b0e278d
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titanrecuver")
 
 ///////////////////////////////////////      eft_saiga12_fs_chaos
@@ -775,10 +780,10 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 0.5
-ATT.CustomPros = { Ergonomics = "+0.5" }
 
 ATT.Category = {"eft_chaos_fs"}
 
+-- EFT ID: 674fe8dd362ea1f88b0e2792
 ARC9.LoadAttachment(ATT, "eft_saiga12_fs_chaos")
 
 ///////////////////////////////////////      eft_saiga12_rs_chaos
@@ -793,7 +798,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 0.5
-ATT.CustomPros = { Ergonomics = "+0.5" }
 
 ATT.Category = {"eft_chaos_rs"}
 
@@ -807,6 +811,7 @@ ATT.Sights = {
     }
 }
 
+-- EFT ID: 674fe8cf4472d471fb0f07df
 ARC9.LoadAttachment(ATT, "eft_saiga12_rs_chaos")
 
 
@@ -825,7 +830,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_saiga12_mag"}
 
 ATT.EFTErgoAdd = -24
-ATT.CustomCons = { Ergonomics = "-24" }
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
@@ -837,4 +841,5 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_drummd20
 
 ATT.ActivateElements = {"magdrum2"}
 
+-- EFT ID: 674fe8f6f34d761ab8020cc8
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_md20")

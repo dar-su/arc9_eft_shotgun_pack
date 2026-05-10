@@ -13,7 +13,6 @@ ATT.Description = [[A 500mm barrel for the Benelli M3 S90 12 gauge shotgun.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 
@@ -32,6 +31,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6259c2c1d714855d182bad85
 ARC9.LoadAttachment(ATT, "eft_m3s90_barrel_std")
 
 ///////////////////////////////////////      eft_m3s90_hg_std
@@ -46,13 +46,13 @@ ATT.Description = [[Benelli M3 black synthetic forend with firing mode switch is
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m3s90_hg"}
 
+-- EFT ID: 6259c4347d6aab70bc23a190
 ARC9.LoadAttachment(ATT, "eft_m3s90_hg_std")
 
 ///////////////////////////////////////      eft_m3s90_stock_std
@@ -71,7 +71,6 @@ ATT.Category = {"eft_m3s90_stock"}
 
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10", ["Recoil while extended"] = "-30%" }
 
 -- ATT.RecoilMult = 0.62
 -- ATT.VisualRecoilMult = 0.62
@@ -97,6 +96,7 @@ ATT.ToggleStats = {
     },
 }
 
+-- EFT ID: 6259c3387d6aab70bc23a18d
 ARC9.LoadAttachment(ATT, "eft_m3s90_stock_std")
 
 ///////////////////////////////////////      eft_m3s90_pg_std
@@ -111,13 +111,13 @@ ATT.Description = [[A special pistol grip for M3 telescopic stocks manufactured 
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m3s90_pg"}
 
+-- EFT ID: 6259c3d8012d6678ec38eeb8
 ARC9.LoadAttachment(ATT, "eft_m3s90_pg_std")
 
 ///////////////////////////////////////      eft_m3s90_stock_urba
@@ -132,7 +132,6 @@ ATT.Description = [[The Urbino fixed-length stock with a pistol grip for the Ben
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.65
 ATT.VisualRecoilMult = 0.65
 
@@ -141,6 +140,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m3s90_stock"}
 
+-- EFT ID: 625eb0faa6e3a82193267ad9
 ARC9.LoadAttachment(ATT, "eft_m3s90_stock_urba")
 
 ///////////////////////////////////////      eft_m3s90_charge_std
@@ -155,13 +155,13 @@ ATT.Description = [[A standard charging handle for Benelli M3 S90. Simplifies bo
 ATT.HasBolt = true 
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m3s90_charge"}
 
+-- EFT ID: 625ec45bb14d7326ac20f572
 ARC9.LoadAttachment(ATT, "eft_m3s90_charge_std")
 
 ///////////////////////////////////////      eft_m3s90_rs_std
@@ -178,6 +178,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m3s90_rs"}
 
+-- EFT ID: 625ebcef6f53af4aa66b44dc
 ARC9.LoadAttachment(ATT, "eft_m3s90_rs_std")
 
 ///////////////////////////////////////      eft_m3s90_mount_std
@@ -190,7 +191,6 @@ ATT.Icon = Material("entities/eft_m3s90_attachments/rail.png", "mips smooth")
 ATT.Description = [[The Benelli M3 top rail allows installation of additional equipment on the Benelli M3 S90.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -206,6 +206,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 625ed7c64d9b6612df732146
 ARC9.LoadAttachment(ATT, "eft_m3s90_mount_std")
 
 
@@ -219,7 +220,6 @@ ATT.Icon = Material("entities/eft_m3s90_attachments/5.png", "mips smooth")
 ATT.Description = [[A 12ga 5-shell capacity tube magazine cap by Benelli, for M3 S90 shotguns.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -233,6 +233,7 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.992
 
+-- EFT ID: 625ff2ccb8c587128c1a01dd
 ARC9.LoadAttachment(ATT, "eft_m3s90_mag_5")
 
 ///////////////////////////////////////      eft_m3s90_mag_7
@@ -245,7 +246,6 @@ ATT.Icon = Material("entities/eft_m3s90_attachments/7.png", "mips smooth")
 ATT.Description = [[A 7-shell capacity tube magazine for Benelli M3 S90 12ga.]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -260,6 +260,7 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
+-- EFT ID: 6259bdcabd28e4721447a2aa
 ARC9.LoadAttachment(ATT, "eft_m3s90_mag_7")
 
 ///////////////////////////////////////      eft_m3s90_mag_9
@@ -272,7 +273,6 @@ ATT.Icon = Material("entities/eft_m3s90_attachments/9.png", "mips smooth")
 ATT.Description = [[A 12ga 9-shell capacity tube magazine by Toni System for Benelli M3 S90 shotguns.]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 3
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -290,6 +290,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.989
 
 ATT.ExcludeElements = {"eft_muzzle_12g_salvo", "eft_muzzle_12g_hexasup", "eft_muzzle_12g_gk02"}
 
+-- EFT ID: 625ff2eb9f5537057932257d
 ARC9.LoadAttachment(ATT, "eft_m3s90_mag_9")
 
 ///////////////////////////////////////      eft_m3s90_mag_11
@@ -302,7 +303,6 @@ ATT.Icon = Material("entities/eft_m3s90_attachments/11.png", "mips smooth")
 ATT.Description = [[A 12ga 11-shell capacity tube magazine by Toni System for Benelli M3 S90 shotguns.]]
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 4
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -320,6 +320,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.988
 
 ATT.ExcludeElements = {"eft_muzzle_12g_salvo", "eft_muzzle_12g_hexasup", "eft_muzzle_12g_gk02"}
 
+-- EFT ID: 625ff3046d721f05d93bf2ee
 ARC9.LoadAttachment(ATT, "eft_m3s90_mag_11")
 
 ///////////////////////////////////////      eft_m3s90_mag_13
@@ -332,7 +333,6 @@ ATT.Icon = Material("entities/eft_m3s90_attachments/13.png", "mips smooth")
 ATT.Description = [[A 12ga 13-shell capacity tube magazine by Toni System for Benelli M3 S90 shotguns.]]
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.SortOrder = 5
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -350,6 +350,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.987
 
 ATT.ExcludeElements = {"eft_muzzle_12g_salvo", "eft_muzzle_12g_hexasup", "eft_muzzle_12g_gk02"}
 
+-- EFT ID: 625ff31daaaa8c1130599f64
 ARC9.LoadAttachment(ATT, "eft_m3s90_mag_13")
 
 
@@ -380,4 +381,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_m3s90_jonnwick")

@@ -43,6 +43,7 @@ ATT.HeatPerShotMult = 2
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e68c4a4b9361b93413f79
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_50bmg")
 
 
@@ -84,6 +85,7 @@ ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e6772a4b936088465b17c
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_525mm")
 
 ///////////////////////////////////////      eft_ammo_12x70_pir
@@ -124,6 +126,7 @@ ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 64b8ee384b75259c590fa89b
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_pir")
 
 
@@ -165,6 +168,7 @@ ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 560d5e524bdc2d25448b4571
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_7mm")
 
 
@@ -207,6 +211,7 @@ ATT.SpreadMult = 0.2
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e68a8a4b9360b6c0d54e2
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_ap20")
 
 
@@ -249,6 +254,7 @@ ATT.SpreadMult = 0.1
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e68dea4b9361bcc29e659
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_dual_sabot")
 
 
@@ -291,6 +297,7 @@ ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e67fba4b9361bc73bc779
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_express")
 
 
@@ -333,6 +340,7 @@ ATT.HeatPerShotMult = 1.6
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e6911a4b9361bd5780d52
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_flechette")
 
 
@@ -375,6 +383,7 @@ ATT.HeatPerShotMult = 1.5
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e68e6a4b9361c140bcfe0
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_ftx")
 
 
@@ -417,6 +426,7 @@ ATT.HeatPerShotMult = 1.5
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e6869a4b9361c140bcfde
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_grizzly40")
 
 
@@ -459,6 +469,7 @@ ATT.HeatPerShotMult = 1.5
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e68b3a4b9361bca7e50b5
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_hpcopper")
 
 
@@ -501,6 +512,7 @@ ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e6806a4b936088465b17e
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_magnum")
 
 
@@ -543,6 +555,7 @@ ATT.HeatPerShotMult = 1.5
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e6891a4b9361bd473feea
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_poleva3")
 
 
@@ -585,6 +598,7 @@ ATT.HeatPerShotMult = 1.6
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e689ca4b9361bc8618956
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_poleva6u")
 
 
@@ -627,6 +641,7 @@ ATT.HeatPerShotMult = 1.6
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5c0d591486f7744c505b416f
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_rip")
 
 
@@ -669,6 +684,7 @@ ATT.HeatPerShotMult = 1.5
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 58820d1224597753c90aeb13
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_slug")
 
 
@@ -711,36 +727,5 @@ ATT.HeatPerShotMult = 1.2
 ATT.Category = {"eft_ammo_12x70"}
 
 
+-- EFT ID: 5d6e68d1a4b93622fe60e845
 ARC9.LoadAttachment(ATT, "eft_ammo_12x70_superformance")
-
-
-
--- maybe later
--- ///////////////////////////////////////      eft_ammo_12x70_mixed_50bmg_flech
-
-
--- ATT = {}
-
--- ATT.PrintName = "12/70 flechette + 12/70 makeshift .50 BMG slug"
--- ATT.CompactName = "Flechette + .50 BMG"
--- ATT.Icon = Material("entities/eft_attachments/ammo/12x70/flech_bmg.png", "mips smooth")
--- ATT.Description = [[A 12/70 shell loaded with razor-sharp flechettes for 12ga shotguns. Far from being the most effective round, but believe us - you definitely don't want to be on the receiving end of the weapon loaded with it.
--- +
--- A custom-made 12/70 slug shell with a shortened .50 BMG tracer bullet for 12 gauge shotguns. No one knows who and why is producing these strange slugs in Tarkov, but they just work... somehow.]]
--- ATT.SortOrder = 0
--- ATT.MenuCategory = "ARC9 - EFT Attachments"
-
--- ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/patron_12x70_slug_superformance_shell.mdl"
-
--- ATT.DamageOverride = 197
--- ATT.Num = 1
-
--- ATT.DamageOverride = 25
--- ATT.Num = 8
-
--- ATT.Category = {"eft_ammo_12x70"}
--- ATT.Folder = "Mixed loads"
-
-
--- ARC9.LoadAttachment(ATT, "eft_ammo_12x70_mixed_50bmg_flech")
-

@@ -13,7 +13,6 @@ ATT.Description = [[A 510mm long barrel for the KS-23 23x75mm pump-action shotgu
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.SpreadOverride = 25.78 * ARC9.MOAToAcc
@@ -25,6 +24,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_barrel"}
 
+-- EFT ID: 5e848d1c264f7c180b5e35a9
 ARC9.LoadAttachment(ATT, "eft_ks23_barrel_510")
 
 ///////////////////////////////////////      eft_ks23_barrel_700
@@ -39,7 +39,6 @@ ATT.Description = [[A 700mm long barrel for the KS-23 23x75mm pump-action shotgu
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -10
-ATT.CustomCons = { Ergonomics = "-10" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.SpreadOverride = 15.47 * ARC9.MOAToAcc
@@ -49,6 +48,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_barrel"}
 
+-- EFT ID: 5e848d2eea0a7c419c2f9bfd
 ARC9.LoadAttachment(ATT, "eft_ks23_barrel_700")
 
 ///////////////////////////////////////      eft_ks23_hg_std
@@ -63,13 +63,13 @@ ATT.Description = [[A standard-issue polymer forestock made for the KS-23M shotg
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_hg"}
 
+-- EFT ID: 5e848d51e4dbc5266a4ec63b
 ARC9.LoadAttachment(ATT, "eft_ks23_hg_std")
 
 ///////////////////////////////////////      eft_ks23_stock_wood
@@ -89,10 +89,10 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ks23_stock"}
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.66
 ATT.VisualRecoilMult = 0.66
 
+-- EFT ID: 5e848db4681bea2ada00daa9
 ARC9.LoadAttachment(ATT, "eft_ks23_stock_wood")
 
 ///////////////////////////////////////      eft_ks23_stock_pistol
@@ -112,7 +112,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_ks23_stock"}
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.Attachments = {
     {
@@ -123,6 +122,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5e848d99865c0f329958c83b
 ARC9.LoadAttachment(ATT, "eft_ks23_stock_pistol")
 
 ///////////////////////////////////////      eft_ks23_stock_steel
@@ -135,7 +135,6 @@ ATT.Icon = Material("entities/eft_ks23_attachments/st.png", "mips smooth")
 ATT.Description = [[A steel wired stock for the KS-23M shotgun, manufactured by TOZ..]]
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 
@@ -144,6 +143,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_steel"}
 
+-- EFT ID: 5e848dc4e4dbc5266a4ec63d
 ARC9.LoadAttachment(ATT, "eft_ks23_stock_steel")
 
 ///////////////////////////////////////      eft_ks23_mag_3
@@ -156,7 +156,6 @@ ATT.Icon = Material("entities/eft_ks23_attachments/3.png", "mips smooth")
 ATT.Description = [[A 3-shell capacity magazine cap for KS-23M 23x75mm shells.]]
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 
 ATT.SortOrder = 1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -170,6 +169,7 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.95
 
+-- EFT ID: 5f647d9f8499b57dc40ddb93
 ARC9.LoadAttachment(ATT, "eft_ks23_mag_3")
 
 
@@ -201,7 +201,6 @@ ATT.Sights = {
     }
 }
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_komz_rusak_marks.png", "mips smooth")
@@ -213,6 +212,7 @@ ATT.ModelOffset = Vector(1.12, 0, -0.041)
 ATT.ModelAngleOffset = Angle(0, -90, -0)
 
 
+-- EFT ID: 65f05b9d39dab9e9ec049cfd
 ARC9.LoadAttachment(ATT, "eft_optic_rusak")
 
 
@@ -260,6 +260,7 @@ ATT.HeatPerShotMult = 1.8
 
 ATT.Category = {"eft_ammo_23x75"}
 
+-- EFT ID: 5e85a9a6eacf8c039e4e2ac1
 ARC9.LoadAttachment(ATT, "eft_ammo_23x75_sh10")
 
 ///////////////////////////////////////      eft_ammo_23x75_sh25
@@ -299,6 +300,7 @@ ATT.HeatPerShotMult = 2
 
 ATT.Category = {"eft_ammo_23x75"}
 
+-- EFT ID: 5f647f31b6238e5dd066e196
 ARC9.LoadAttachment(ATT, "eft_ammo_23x75_sh25")
 
 ///////////////////////////////////////      eft_ammo_23x75_bar
@@ -338,6 +340,7 @@ ATT.HeatPerShotMult = 2.32
 
 ATT.Category = {"eft_ammo_23x75"}
 
+-- EFT ID: 5e85aa1a988a8701445df1f5
 ARC9.LoadAttachment(ATT, "eft_ammo_23x75_bar")
 
 
@@ -439,6 +442,7 @@ end
 
 ATT.Category = {"eft_ammo_23x75"}
 
+-- EFT ID: 5e85a9f4add9fe03027d9bf1
 ARC9.LoadAttachment(ATT, "eft_ammo_23x75_zvezda")
 
 end

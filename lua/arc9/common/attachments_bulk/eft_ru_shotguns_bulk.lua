@@ -10,7 +10,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_510mm_barrel.png"
 ATT.Description = "A standard factory-produced 510mm barrel for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.92
@@ -35,6 +34,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 55d4491a4bdc2d882f8b456e
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_510")
 
 ///////////////////////////////////////      eft_mr133_barrel_510r
@@ -47,7 +47,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_510mm_barrel_with
 ATT.Description = "A standard factory-produced 510mm barrel with a wide upper rib for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.92
@@ -79,6 +78,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 560835c74bdc2dc8488b456f
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_510r")
 
 
@@ -92,7 +92,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_540mm_barrel.png"
 ATT.Description = "A standard factory-produced 540mm barrel for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.965
 ATT.VisualRecoilMult = 0.965
 ATT.HeatCapacityMult = 0.9
@@ -117,6 +116,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 560836484bdc2d20478b456e
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_540")
 
 ///////////////////////////////////////      eft_mr133_barrel_540r
@@ -129,7 +129,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_540mm_barrel_with
 ATT.Description = "A standard factory-produced 540mm barrel with a wide upper rib for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.965
 ATT.VisualRecoilMult = 0.965
 ATT.HeatCapacityMult = 0.9
@@ -161,6 +160,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 560836b64bdc2d57468b4567
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_540r")
 
 ///////////////////////////////////////      eft_mr133_barrel_610
@@ -173,7 +173,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_610mm_barrel.png"
 ATT.Description = "A standard factory-produced 610mm barrel for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.88
@@ -199,6 +198,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 55d448594bdc2d8c2f8b4569
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_610")
 
 ///////////////////////////////////////      eft_mr133_barrel_610r
@@ -211,7 +211,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_610mm_barrel_with
 ATT.Description = "A standard factory-produced 610mm barrel with a wide upper rib for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.88
@@ -244,6 +243,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 55d449444bdc2d962f8b456d
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_610r")
 
 ///////////////////////////////////////      eft_mr133_barrel_660
@@ -256,7 +256,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_660mm_barrel.png"
 ATT.Description = "A standard factory-produced 660mm barrel for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -12
-ATT.CustomCons = { Ergonomics = "-12" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 0.86
@@ -282,6 +281,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 560836fb4bdc2d773f8b4569
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_660")
 
 ///////////////////////////////////////      eft_mr133_barrel_660r
@@ -294,7 +294,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_660mm_barrel_with
 ATT.Description = "A standard factory-produced 660mm barrel with a wide upper rib for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -10
-ATT.CustomCons = { Ergonomics = "-10" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 0.86
@@ -327,6 +326,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 560837154bdc2da74d8b4568
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_660r")
 
 ///////////////////////////////////////      eft_mr133_barrel_710
@@ -339,7 +339,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_710mm_barrel.png"
 ATT.Description = "A standard factory-produced 710mm barrel for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.HeatCapacityMult = 0.84
@@ -365,6 +364,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5608373c4bdc2dc8488b4570
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_710")
 
 ///////////////////////////////////////      eft_mr133_barrel_710r
@@ -377,7 +377,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_710mm_barrel_with
 ATT.Description = "A standard factory-produced 710mm barrel with a wide upper rib for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -12
-ATT.CustomCons = { Ergonomics = "-12" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.HeatCapacityMult = 0.84
@@ -410,6 +409,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 560837544bdc2de22e8b456e
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_710r")
 
 ///////////////////////////////////////      eft_mr133_barrel_750
@@ -422,7 +422,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_750mm_barrel.png"
 ATT.Description = "A standard factory-produced 750mm barrel for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -19
-ATT.CustomCons = { Ergonomics = "-19" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.HeatCapacityMult = 0.82
@@ -448,6 +447,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 560837824bdc2d57468b4568
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_750")
 
 ///////////////////////////////////////      eft_mr133_barrel_750r
@@ -460,7 +460,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_750mm_barrel_with
 ATT.Description = "A standard factory-produced 750mm barrel with a wide upper rib for MP-133 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -17
-ATT.CustomCons = { Ergonomics = "-17" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.HeatCapacityMult = 0.82
@@ -493,6 +492,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5608379a4bdc2d26448b4569
 ARC9.LoadAttachment(ATT, "eft_mr133_barrel_750r")
 
 ///////////////////////////////////////      eft_mr153_barrel_610
@@ -504,7 +504,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_12ga_610mm_barrel.png"
 ATT.Description = "A standard factory-produced 610mm barrel for MP-153 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.88
@@ -537,6 +536,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 588200af24597742fa221dfb
 ARC9.LoadAttachment(ATT, "eft_mr153_barrel_610")
 ///////////////////////////////////////      eft_mr153_barrel_660
 
@@ -547,7 +547,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_12ga_660mm_barrel.png"
 ATT.Description = "A standard factory-produced 660mm barrel for MP-153 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -12
-ATT.CustomCons = { Ergonomics = "-12" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 0.86
@@ -579,6 +578,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 588200c224597743990da9ed
 ARC9.LoadAttachment(ATT, "eft_mr153_barrel_660")
 ///////////////////////////////////////      eft_mr153_barrel_710
 
@@ -589,7 +589,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_12ga_710mm_barrel.png"
 ATT.Description = "A standard factory-produced 710mm barrel for MP-153 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.HeatCapacityMult = 0.84
@@ -623,6 +622,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 588200cf2459774414733d55
 ARC9.LoadAttachment(ATT, "eft_mr153_barrel_710")
 ///////////////////////////////////////      eft_mr153_barrel_750
 
@@ -633,7 +633,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_12ga_750mm_barrel.png"
 ATT.Description = "A standard factory-produced 750mm barrel for MP-153 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -20
-ATT.CustomCons = { Ergonomics = "-20" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.HeatCapacityMult = 0.82
@@ -667,6 +666,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 56deec93d2720bec348b4568
 ARC9.LoadAttachment(ATT, "eft_mr153_barrel_750")
 ///////////////////////////////////////      eft_mr155_barrel_510
 
@@ -677,7 +677,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_12ga_510mm_barrel.png"
 ATT.Description = "A standard serially produced 510mm barrel for MP-155 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.92
@@ -702,6 +701,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6076c1b9f2cb2e02a42acedc
 ARC9.LoadAttachment(ATT, "eft_mr155_barrel_510")
 
 ///////////////////////////////////////      eft_mr133_hg_wood
@@ -714,7 +714,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_beechwood_forestock.pn
 ATT.Description = "A standard Izhmekh-manufactured forestock, designed for MP-133 shotguns and made out of beechwood."
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 1.029
 
 ATT.HasHG = true 
@@ -729,6 +728,7 @@ ATT.ModelOffset = Vector(0.1, 2.0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+-- EFT ID: 55d45d3f4bdc2d972f8b456c
 ARC9.LoadAttachment(ATT, "eft_mr133_hg_wood")
 ///////////////////////////////////////      eft_mr133_hg_custom
 
@@ -740,7 +740,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_custom_plastic_foresto
 ATT.Description = "A nonstandard polymer forestock for MP-133 pump-action shotguns, manufactured by an unknown third-party producer. Equipped with 2 short and 1 long mount for installation of additional equipment."
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.027
@@ -781,6 +780,7 @@ ATT.ModelOffset = Vector(0.1, 2.0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+-- EFT ID: 55d45f484bdc2d972f8b456d
 ARC9.LoadAttachment(ATT, "eft_mr133_hg_custom")
 ///////////////////////////////////////      eft_mr153_hg_std
 
@@ -792,7 +792,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_polymer_forestock.png"
 ATT.Description = "A standard Izhmekh-manufactured polymer forestock for the MP-153 shotgun."
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 1.022
 
 ATT.HasHG = true 
@@ -807,6 +806,7 @@ ATT.ModelOffset = Vector(0.1, 1.5, -0.3)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+-- EFT ID: 56deed6ed2720b4c698b4583
 ARC9.LoadAttachment(ATT, "eft_mr153_hg_std")
 ///////////////////////////////////////      eft_mr155_hg_std
 
@@ -818,7 +818,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_walnut_forestock.png",
 ATT.Description = "A Monte Carlo-style wooden walnut forestock for MP-155 shotguns. Manufactured by Izhmekh."
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 1.041
 
 ATT.HasHG = true 
@@ -835,6 +834,7 @@ ATT.LHIK = true
 
 ATT.ExcludeElements = {"eft_mr155_stock_ultima"}
 
+-- EFT ID: 607d5aa50494a626335e12ed
 ARC9.LoadAttachment(ATT, "eft_mr155_hg_std")
 ///////////////////////////////////////      eft_mr155_hg_ultima
 
@@ -846,7 +846,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_polymer_foresto
 ATT.Description = "The \"Ultima\" modification polymer forestock for the MP-155 shotgun. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.HeatCapacityMult = 1.026
 
 ATT.HasHG = true 
@@ -870,6 +869,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 606ee5c81246154cad35d65e
 ARC9.LoadAttachment(ATT, "eft_mr155_hg_ultima")
 
 ///////////////////////////////////////      eft_etmi019
@@ -896,6 +896,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5dfe14f30b92095fd441edaf
 ARC9.LoadAttachment(ATT, "eft_etmi019")
 
 ///////////////////////////////////////      eft_mr133_mount_sprm
@@ -908,7 +909,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/kiba_arms_sprm_rail_mount_fo
 ATT.Description = "The universal SPRM 13-position rail mount by Kiba Arms International, for attaching additional devices to pump-action shotguns."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -926,6 +926,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mr155_stock_ultima"}
 
+-- EFT ID: 55d48a634bdc2d8b2f8b456a
 ARC9.LoadAttachment(ATT, "eft_mr133_mount_sprm")
 
 ///////////////////////////////////////      eft_mr133_sprut
@@ -938,7 +939,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/deltatek_sprut_mount_for_pum
 ATT.Description = "The Delta-Tek Sprut mount was developed to install on tube magazines of pump-action shotguns like the MP-133, MP-153, MP-135, Benelli M2, Winchester 1300, and so on. It features 3 Weaver mounts for the attachment of additional devices."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -969,6 +969,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+-- EFT ID: 55d48ebc4bdc2d8c2f8b456c
 ARC9.LoadAttachment(ATT, "eft_mr133_sprut")
 
 
@@ -982,7 +983,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133153_wooden_stock.png", 
 ATT.Description = "A wooden stock for MP-133 and MP-153 shotguns with a rubber butt-plate manufactured by Izhmekh."
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -993,6 +993,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr133_stock"}
 
+-- EFT ID: 56083cba4bdc2de22e8b456f
 ARC9.LoadAttachment(ATT, "eft_mr133_stock_wood")
 
 ///////////////////////////////////////      eft_mr133_stock_plastic
@@ -1005,7 +1006,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133153_plastic_stock.png",
 ATT.Description = "A plastic stock for MP-133 and MP-153 shotguns with a rubber butt-plate manufactured by Izhmekh."
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -1016,6 +1016,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr133_stock"}
 
+-- EFT ID: 56083be64bdc2d20478b456f
 ARC9.LoadAttachment(ATT, "eft_mr133_stock_plastic")
 
 ///////////////////////////////////////      eft_mr133_stock_pistol
@@ -1028,7 +1029,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133153_plastic_pistol_grip
 ATT.Description = "A plastic pistol grip for MP-133 and MP-153 shotguns to replace the standard stock, manufactured by Izhmekh."
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 
@@ -1049,6 +1049,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 56083a334bdc2dc8488b4571
 ARC9.LoadAttachment(ATT, "eft_mr133_stock_pistol")
 
 ///////////////////////////////////////      eft_mr133_stock_adap
@@ -1061,7 +1062,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133153_taktika_tula_12003_
 ATT.Description = "The Taktika Tula 12003 stock adapter designed for mounting various FAB Defense stocks on MP-133/153 shotguns."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1078,6 +1078,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5bfe7fb30db8340018089fed
 ARC9.LoadAttachment(ATT, "eft_mr133_stock_adap")
 ///////////////////////////////////////      eft_mr155_stock_std
 
@@ -1089,7 +1090,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_walnut_stock.png", "mi
 ATT.Description = "A Monte Carlo-style wooden walnut stock for MP-155 shotguns with a rubber butt-plate. Manufactured by Izhmekh."
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -1100,6 +1100,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr155_stock"}
 
+-- EFT ID: 607d5a891246154cad35d6aa
 ARC9.LoadAttachment(ATT, "eft_mr155_stock_std")
 ///////////////////////////////////////      eft_mr155_stock_ultima
 
@@ -1111,7 +1112,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_pistol_grip.png
 ATT.Description = "The \"Ultima\" modification pistol grip for the MP-155 shotgun. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 
 -- ATT.HasGrip = true
 
@@ -1131,6 +1131,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = {"eft_mr155_hg_std", "eft_mr133_mount_sprm"}
 
+-- EFT ID: 606eef46232e5a31c233d500
 ARC9.LoadAttachment(ATT, "eft_mr155_stock_ultima")
 ///////////////////////////////////////      eft_mr155_stock_ultima_stock
 
@@ -1142,7 +1143,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_polymer_stock.p
 ATT.Description = "The \"Ultima\" modification polymer stock for the MP-155 shotgun. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 
@@ -1166,6 +1166,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 606eef756d0bd7580617baf8
 ARC9.LoadAttachment(ATT, "eft_mr155_stock_ultima_stock")
 ///////////////////////////////////////      eft_mr155_stock_ultima_cap
 
@@ -1177,7 +1178,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_pistol_grip_rub
 ATT.Description = "The \"Ultima\" modification ergonomical rubber pad for the MP-155 pistol grip. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasGrip = true
 
@@ -1186,6 +1186,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr155u_pg_stock"}
 
+-- EFT ID: 60785c0d232e5a31c233d51c
 ARC9.LoadAttachment(ATT, "eft_mr155_stock_ultima_cap")
 ///////////////////////////////////////      eft_mr155_stock_ultima_pads
 
@@ -1197,7 +1198,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_thin_recoil_pad
 ATT.Description = "The \"Ultima\" modification small rubber recoil butt-pad for the MP-155 shotgun. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -1208,6 +1208,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr155u_pg_stock_pad"}
 
+-- EFT ID: 606ef0812535c57a13424d20
 ARC9.LoadAttachment(ATT, "eft_mr155_stock_ultima_pads")
 ///////////////////////////////////////      eft_mr155_stock_ultima_padm
 
@@ -1219,7 +1220,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_medium_recoil_p
 ATT.Description = "The \"Ultima\" modification medium rubber recoil butt-pad for the MP-155 shotgun. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 
@@ -1230,6 +1230,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr155u_pg_stock_pad"}
 
+-- EFT ID: 606f262c6d0bd7580617bafa
 ARC9.LoadAttachment(ATT, "eft_mr155_stock_ultima_padm")
 ///////////////////////////////////////      eft_mr155_stock_ultima_padl
 
@@ -1241,7 +1242,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_large_recoil_pa
 ATT.Description = "The \"Ultima\" modification large rubber recoil butt-pad for the MP-155 shotgun. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 
@@ -1252,6 +1252,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr155u_pg_stock_pad"}
 
+-- EFT ID: 606f263a8900dc2d9a55b68d
 ARC9.LoadAttachment(ATT, "eft_mr155_stock_ultima_padl")
 
 ///////////////////////////////////////      eft_mr155u_mount_bottombig
@@ -1264,7 +1265,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_underbarrel_mou
 ATT.Description = "The \"Ultima\" modification underbarrel mount for the MP-155 shotgun. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 0.994
 
 ATT.SortOrder = 0
@@ -1272,6 +1272,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr155u_ub"}
 
+-- EFT ID: 606f26752535c57a13424d22
 ARC9.LoadAttachment(ATT, "eft_mr155u_mount_bottombig")
 
 ///////////////////////////////////////      eft_mr155u_mount_bottom
@@ -1284,7 +1285,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_short_rail.png"
 ATT.Description = "The \"Ultima\" modification short rail for the MP-155 shotgun, which allows installation of additional equipment on the handguard. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 0.994
 
 ATT.SortOrder = 0
@@ -1300,6 +1300,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+-- EFT ID: 607ea812232e5a31c233d53c
 ARC9.LoadAttachment(ATT, "eft_mr155u_mount_bottom")
 
 ///////////////////////////////////////      eft_mr155u_mount_top
@@ -1312,7 +1313,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_top_rail.png", 
 ATT.Description = "The \"Ultima\" modification top rail for the MP-155 shotgun. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.982
@@ -1384,6 +1384,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+-- EFT ID: 60785ce5132d4d12c81fd918
 ARC9.LoadAttachment(ATT, "eft_mr155u_mount_top")
 
 ///////////////////////////////////////      eft_mr155u_thermal
@@ -1396,7 +1397,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_thermal_camera.
 ATT.Description = "A special thermal imaging camera for the \"Ultima\" modification for the MP-155 shotgun. The image from the camera is displayed on the front display on the back of the weapon. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1502,6 +1502,7 @@ end
 --     vm:SetSubMaterial(1, "effects/arc9_eft/rt")
 -- end
 
+-- EFT ID: 606f2696f2cb2e02a42aceb1
 ARC9.LoadAttachment(ATT, "eft_mr155u_thermal")
 
 ///////////////////////////////////////      eft_mr155u_thermal_alt
@@ -1514,7 +1515,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_ultima_thermal_camera_
 ATT.Description = "A special thermal imaging camera for the \"Ultima\" modification for the MP-155 shotgun. The image from the camera is displayed on the front display on the back of the weapon. Manufactured by Kalashnikov Group."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1632,6 +1632,7 @@ end
 --     vm:SetSubMaterial(1, "effects/arc9_eft/rt")
 -- end
 
+-- EFT ID: 606f2696f2cb2e02a42aceb1
 ARC9.LoadAttachment(ATT, "eft_mr155u_thermal_alt")
 
 ///////////////////////////////////////      eft_mr133_mag_6
@@ -1644,7 +1645,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_6shell_magazine.p
 ATT.Description = "A 6-shell capacity 12 gauge tube magazine by Izhmekh, for MP-133 shotguns."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 8
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1658,6 +1658,7 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
+-- EFT ID: 55d484b44bdc2d1d4e8b456d
 ARC9.LoadAttachment(ATT, "eft_mr133_mag_6")
 
 ///////////////////////////////////////      eft_mr133_mag_8
@@ -1670,7 +1671,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp133_12ga_8shell_magazine.p
 ATT.Description = "An 8-shell capacity 12 gauge tube magazine by Izhmekh, for MP-133 shotguns."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.SortOrder = 8
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1684,6 +1684,7 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
+-- EFT ID: 55d485804bdc2d8c2f8b456b
 ARC9.LoadAttachment(ATT, "eft_mr133_mag_8")
 ///////////////////////////////////////      eft_mr153_mag_4
 
@@ -1695,7 +1696,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_12ga_4shell_magazine_c
 ATT.Description = "An MP-153 12ga 30x25 forend cap."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 4
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1709,6 +1709,7 @@ ATT.ChamberSize = 1
 
 -- ATT.MalfunctionMeanShotsToFailMult = 0.99
 
+-- EFT ID: 56deee15d2720bee328b4567
 ARC9.LoadAttachment(ATT, "eft_mr153_mag_4")
 ///////////////////////////////////////      eft_mr153_mag_5
 
@@ -1720,7 +1721,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_12ga_5shell_magazine.p
 ATT.Description = "A 5-shell magazine extension tube for MP-153 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 5
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1734,6 +1734,7 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
+-- EFT ID: 5882163e24597758206fee8c
 ARC9.LoadAttachment(ATT, "eft_mr153_mag_5")
 ///////////////////////////////////////      eft_mr153_mag_6
 
@@ -1745,7 +1746,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_12ga_6shell_magazine.p
 ATT.Description = "A 6-shell magazine extension tube for MP-153 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.SortOrder = 6
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1759,6 +1759,7 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
+-- EFT ID: 5882163824597757561aa922
 ARC9.LoadAttachment(ATT, "eft_mr153_mag_6")
 ///////////////////////////////////////      eft_mr153_mag_7
 
@@ -1770,7 +1771,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp153_12ga_7shell_magazine.p
 ATT.Description = "A 7-shell magazine extension tube for MP-153 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 
 
 ATT.SortOrder = 7
@@ -1787,6 +1787,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.ExcludeElements = {"eft_muzzle_12g_salvo"}
 
+-- EFT ID: 5882163224597757561aa920
 ARC9.LoadAttachment(ATT, "eft_mr153_mag_7")
 
 ///////////////////////////////////////      eft_mr153_mag_8
@@ -1800,7 +1801,6 @@ ATT.Description = "An 8-shell magazine extension tube for MP-153 12 gauge shotgu
 
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 
 
 ATT.SortOrder = 8
@@ -1817,6 +1817,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.ExcludeElements = {"eft_muzzle_12g_salvo"}
 
+-- EFT ID: 56deeefcd2720bc8328b4568
 ARC9.LoadAttachment(ATT, "eft_mr153_mag_8")
 ///////////////////////////////////////      eft_mr155_mag_6
 
@@ -1828,7 +1829,6 @@ ATT.Icon = Material("entities/eft_mr133_attachments/mp155_12ga_6shell_magazine.p
 ATT.Description = "A 6-shell magazine extension tube for MP-155 12 gauge shotguns."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 
 ATT.SortOrder = 6
@@ -1843,6 +1843,7 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
+-- EFT ID: 6076c87f232e5a31c233d50e
 ARC9.LoadAttachment(ATT, "eft_mr155_mag_6")
 
 
@@ -1881,7 +1882,6 @@ ATT.Description = [[A 510mm long 12 gauge barrel for the MP-43-1C double-barrell
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.SpreadOverride = 17.53 * ARC9.MOAToAcc
@@ -1891,6 +1891,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr43_barrel"}
 
+-- EFT ID: 5580169d4bdc2d9d138b4585
 ARC9.LoadAttachment(ATT, "eft_mr43_barrel_510")
 
 ///////////////////////////////////////      eft_mr43_barrel_725
@@ -1905,7 +1906,6 @@ ATT.Description = [[A 725mm long 12 gauge barrel for the MP-43-1C double-barrell
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -9
-ATT.CustomCons = { Ergonomics = "-9" }
 ATT.RecoilMult = 0.88
 ATT.VisualRecoilMult = 0.88
 ATT.SpreadOverride = 13.06 * ARC9.MOAToAcc
@@ -1915,6 +1915,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr43_barrel"}
 
+-- EFT ID: 55d447bb4bdc2d892f8b456f
 ARC9.LoadAttachment(ATT, "eft_mr43_barrel_725")
 
 ///////////////////////////////////////      eft_mr43_barrel_750
@@ -1929,7 +1930,6 @@ ATT.Description = [[A 750mm long 12 gauge barrel for the MP-43-1C double-barrell
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -11
-ATT.CustomCons = { Ergonomics = "-11" }
 ATT.RecoilMult = 0.86
 ATT.VisualRecoilMult = 0.86
 ATT.SpreadOverride = 10.66 * ARC9.MOAToAcc
@@ -1939,6 +1939,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mr43_barrel"}
 
+-- EFT ID: 55d447bb4bdc2d892f8b456f
 ARC9.LoadAttachment(ATT, "eft_mr43_barrel_750")
 
 ///////////////////////////////////////      eft_mr43_barrel_310
@@ -1953,7 +1954,6 @@ ATT.Description = [[A 310mm sawed-off 12 gauge barrel for the MP-43 double-barre
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.SpreadOverride = 23.38 * ARC9.MOAToAcc
 
 ATT.SortOrder = 0
@@ -1961,6 +1961,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sawedoff_barrel"}
 
+-- EFT ID: 64748d02d1c009260702b526
 ARC9.LoadAttachment(ATT, "eft_mr43_barrel_310")
 
 ///////////////////////////////////////      eft_mr43_butt
@@ -1973,7 +1974,6 @@ ATT.Icon = Material("entities/eft_mr43_attachments/b.png", "mips smooth")
 ATT.Description = [[A standard-issue buttpad for MP-43 shotguns.]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -1982,6 +1982,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_butt_mr43"}
 
+-- EFT ID: 611a31ce5b7ffe001b4649d1
 ARC9.LoadAttachment(ATT, "eft_mr43_butt")
 
 
@@ -2004,7 +2005,6 @@ ATT.Icon = Material("entities/eft_mts255_attachments/mag.png", "mips smooth")
 ATT.Description = [[A standard-issue cylinder for the MTs-255-12 revolver shotgun.]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.ClipSize = 5
 
@@ -2015,6 +2015,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mts255_mag"}
 
+-- EFT ID: 60dc519adf4c47305f6d410d
 ARC9.LoadAttachment(ATT, "eft_mts255_mag_std")
 
 
@@ -2029,7 +2030,6 @@ ATT.Icon = Material("entities/eft_mts255_attachments/stock.png", "mips smooth")
 ATT.Description = [[A standard wooden stock for the MTs-255-12 shotgun, manufactured by TsKIB.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
 
@@ -2040,6 +2040,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mts255_stock"}
 
+-- EFT ID: 612781056f3d944a17348d60
 ARC9.LoadAttachment(ATT, "eft_mts255_stock_std")
 
 ///////////////////////////////////////      eft_mts255_hg_std
@@ -2053,7 +2054,6 @@ ATT.Icon = Material("entities/eft_mts255_attachments/hg.png", "mips smooth")
 ATT.Description = [[A standard-issue forestock for the MTs-255 shotgun, made out of beechwood.]]
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -2064,6 +2064,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mts255_hg"}
 
+-- EFT ID: 6123649463849f3d843da7c4
 ARC9.LoadAttachment(ATT, "eft_mts255_hg_std")
 
 ///////////////////////////////////////      eft_mts255_barrel_std
@@ -2077,7 +2078,6 @@ ATT.Icon = Material("entities/eft_mts255_attachments/barrel.png", "mips smooth")
 ATT.Description = [[A standard factory-produced 755mm barrel with a wide upper rib for MTs-255 12 gauge shotguns.]]
 
 ATT.EFTErgoAdd = -18
-ATT.CustomCons = { Ergonomics = "-18" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 
@@ -2106,6 +2106,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mts255_barrel"}
 
+-- EFT ID: 612368f58b401f4f51239b33
 ARC9.LoadAttachment(ATT, "eft_mts255_barrel_std")
 
 ///////////////////////////////////////      eft_mts255_muzzle_std
@@ -2126,4 +2127,5 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mts255_muzzle"}
 
+-- EFT ID: 619d36da53b4d42ee724fae4
 ARC9.LoadAttachment(ATT, "eft_mts255_muzzle_std")
