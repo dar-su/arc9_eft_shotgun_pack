@@ -70,6 +70,7 @@ SWEP.DispersionSpreadAddHot = 0.01 -- overheat debuff
 SWEP.RPM = 300
 
 SWEP.EFTErgo = 42
+SWEP.EFTWeight = 1.22
 SWEP.BarrelLength = 42
 SWEP.Ammo = "Buckshot"
 

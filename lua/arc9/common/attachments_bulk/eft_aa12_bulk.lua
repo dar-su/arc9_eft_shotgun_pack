@@ -10,9 +10,6 @@ ATT.CompactName = "AA-12 330mm"
 ATT.Icon = Material("entities/eft_aa12_attachments/330.png", "mips smooth")
 ATT.Description = "A 330mm barrel for the Auto Assault-12 12-gauge shotgun."
 
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-ATT.HeatCapacityMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 1.0256999999999998
 
 ATT.HasBarrel = true
@@ -21,6 +18,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aa12_barrel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -2,
+    weight = 0.8,
+    velocity = 2.57,
+}))
+
 
 -- EFT ID: 66ffac601f7492c901027bbb
 ARC9.LoadAttachment(ATT, "eft_aa12_barrel_330")
@@ -34,9 +38,6 @@ ATT.CompactName = "AA-12 342mm"
 ATT.Icon = Material("entities/eft_aa12_attachments/342.png", "mips smooth")
 ATT.Description = "A 342mm threaded barrel for the Auto Assault-12 12-gauge shotgun."
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 1.0297
 
@@ -57,6 +58,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -3,
+    weight = 0.97,
+    velocity = 2.97,
+}))
+
+
 -- EFT ID: 670fd03dc424cf758f006946
 ARC9.LoadAttachment(ATT, "eft_aa12_barrel_342")
 
@@ -69,9 +78,6 @@ ATT.CompactName = "AA-12 417mm"
 ATT.Icon = Material("entities/eft_aa12_attachments/417.png", "mips smooth")
 ATT.Description = "A 417mm threaded barrel for the Auto Assault-12 12-gauge shotgun."
 
-ATT.EFTErgoAdd = -4
-ATT.RecoilMult = 0.95
-ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 1.0421
 
@@ -99,6 +105,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -5,
+    weight = 1.03,
+    velocity = 4.21,
+}))
+
+
 -- EFT ID: 670fd0a8d8d4eae4790c8187
 ARC9.LoadAttachment(ATT, "eft_aa12_barrel_417")
 
@@ -111,9 +125,6 @@ ATT.CompactName = "AA-12 457mm"
 ATT.Icon = Material("entities/eft_aa12_attachments/457.png", "mips smooth")
 ATT.Description = "A 457mm barrel for the Auto Assault-12 12-gauge shotgun."
 
-ATT.EFTErgoAdd = -6
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 0.93
 ATT.PhysBulletMuzzleVelocityMult = 1.0473000000000001
 
@@ -134,6 +145,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    recoilModifier = -6,
+    weight = 1.14,
+    velocity = 4.73,
+}))
+
+
 -- EFT ID: 670fced86a7e274b1a0964e8
 ARC9.LoadAttachment(ATT, "eft_aa12_barrel_457")
 
@@ -146,12 +165,17 @@ ATT.CompactName = "AA-12 thr."
 ATT.Icon = Material("entities/eft_aa12_attachments/t.png", "mips smooth")
 ATT.Description = "A barrel thread protector for the Auto Assault-12 12ga shotgun."
 
-ATT.EFTErgoAdd = 1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aa12_th"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 670fd0eed8d4eae4790c818a
 ARC9.LoadAttachment(ATT, "eft_aa12_thr")
@@ -165,15 +189,18 @@ ATT.CompactName = "AA-12 choke"
 ATT.Icon = Material("entities/eft_aa12_attachments/mz.png", "mips smooth")
 ATT.Description = "A special muzzle device for the Auto Assault-12 shotgun."
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.985
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aa12_mz"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -3,
+    weight = 0.101,
+}))
+
 
 -- EFT ID: 670fd1cc95c92bfc8e0bea39
 ARC9.LoadAttachment(ATT, "eft_aa12_chok")
@@ -197,6 +224,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_stock_aa12"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.9,
+}))
+
+
 -- EFT ID: 66ffac9e316b08f6840a73e6
 ARC9.LoadAttachment(ATT, "eft_aa12_stock_std")
 
@@ -217,6 +249,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_stock_aa12"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.9,
+}))
+
 
 -- EFT ID: 670fd23798663bc4b10e911a
 ARC9.LoadAttachment(ATT, "eft_aa12_stock_fde")
@@ -239,6 +276,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_stock_aa12"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.9,
+}))
+
+
 -- EFT ID: 6719023b612cc94b9008e78c
 ARC9.LoadAttachment(ATT, "eft_aa12_stock_labs")
 
@@ -251,7 +293,6 @@ ATT.CompactName = "AA-12 8"
 ATT.Icon = Material("entities/eft_aa12_attachments/8.png", "mips smooth")
 ATT.Description = "An 8-round 12-gauge box magazine for the Auto Assault-12 shotgun."
 
-ATT.EFTErgoAdd = -5
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aa12_8.mdl"
 ATT.DropMagazineAmount = 1
@@ -267,6 +308,13 @@ ATT.HasMag = true
 ATT.ClipSize = 8
 -- ATT.ChamberSize = 1
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.34,
+    malfunctionChance = 0.04,
+}))
+
+
 -- EFT ID: 66ffaab91f7492c901027bb8
 ARC9.LoadAttachment(ATT, "eft_aa12_mag_8")
 
@@ -279,7 +327,6 @@ ATT.CompactName = "AA-12 20"
 ATT.Icon = Material("entities/eft_aa12_attachments/20.png", "mips smooth")
 ATT.Description = "A 20-round 12-gauge drum magazine for the Auto Assault-12 shotgun."
 
-ATT.EFTErgoAdd = -20
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aa12_20.mdl"
 ATT.DropMagazineAmount = 1
@@ -318,6 +365,13 @@ ATT.BulletBones = {
     [20] = "patron_020",
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 1.13,
+    malfunctionChance = 0.26,
+}))
+
+
 -- EFT ID: 6709133fa532466d5403fb7c
 ARC9.LoadAttachment(ATT, "eft_aa12_mag_20")
 
@@ -330,7 +384,6 @@ ATT.CompactName = "UTG"
 ATT.Icon = Material("entities/eft_aa12_attachments/m.png", "mips smooth")
 ATT.Description = "TThe UTG Universal Shotgun Barrel Mount is designed for mounting on tubular magazines and barrels with a diameter of 20-25 millimeters. Features 3 rails for attaching additional equipment. Manufactured by Leapers Inc."
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -371,6 +424,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.125,
+}))
+
+
 -- EFT ID: 6710cea62bb09af72f0e6bf8
 ARC9.LoadAttachment(ATT, "eft_aa12_mount_utg")
 
@@ -390,5 +449,9 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aa12_gen"}
 
--- EFT ID: 67124dcfa3541f2a1f0e788b
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = -0.1,
+}))
+
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_aa12_gen2")

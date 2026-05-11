@@ -17,6 +17,12 @@ ATT.Category = {"eft_saiga12_dustcover"}
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 57616c112459773cce774d66
 ARC9.LoadAttachment(ATT, "eft_saiga12_dustcover_std")
 
@@ -35,7 +41,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 2
 
 ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
@@ -108,6 +113,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.37,
+}))
+
+
 -- EFT ID: 5f63418ef5750b524b45f116
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_bravo18")
 
@@ -127,9 +138,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 ATT.Category = {"eft_saiga12_handguard"}
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.021
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_340_lhik.mdl"
@@ -158,6 +166,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 20,
+    weight = 0.24,
+}))
 
 
 -- EFT ID: 6086b5731246154cad35d6c7
@@ -192,6 +206,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 6086b5392535c57a13424d70
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_custom340_mount")
 
@@ -210,11 +229,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 9
 ATT.HeatCapacityMult = 1.026
 
 ATT.Category = {"eft_saiga12_handguard"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    weight = 0.18,
+}))
 
 
 -- EFT ID: 576169e62459773c69055191
@@ -238,9 +262,6 @@ ATT.HasHG = true
 ATT.Category = {"eft_saiga12_handguard"}
 ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.036
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/sok12_utgpro_lhik.mdl"
@@ -288,6 +309,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.428,
+}))
+
+
 -- EFT ID: 5827272a24597748c74bdeea
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_utg_pro_long")
 
@@ -304,9 +331,6 @@ ATT.Description = [[The UTG PRO MTU002 Tactical Quad Rail Short Top is a lightwe
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.017
 
 ATT.HasHG = true 
@@ -359,6 +383,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.408,
+}))
+
+
 -- EFT ID: 58272b392459774b4c7b3ccd
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_utg_pro_short")
 
@@ -377,7 +407,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_mag"}
 
-ATT.EFTErgoAdd = -26
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
@@ -388,6 +417,13 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_drum.mdl"
 
 ATT.ActivateElements = {"magdrum"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -15,
+    weight = 0.66,
+    malfunctionChance = 0.292,
+}))
+
 
 -- EFT ID: 5cf8f3b0d7f00c00217872ef
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_powermag")
@@ -407,7 +443,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_mag"}
 
-ATT.EFTErgoAdd = -7
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
@@ -416,6 +451,13 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_sai02.mdl"
 
 ATT.ActivateElements = {"mag10"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3.5,
+    weight = 0.21,
+    malfunctionChance = 0.05,
+}))
+
 
 -- EFT ID: 5a966f51a2750c00156aacf6
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_promag")
@@ -435,7 +477,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_mag"}
 
-ATT.EFTErgoAdd = -2
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 5
@@ -444,6 +485,13 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_std.mdl"
 
 ATT.ActivateElements = {"mag5"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.19,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 57616a9e2459773c7a400234
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_std")
@@ -461,9 +509,14 @@ ATT.Description = [[A standard-issue threading protection tube for SOK-12.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 1
 
 ATT.Category = {"eft_saiga12_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 576167ab2459773cad038c43
@@ -496,6 +549,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
+
+
 -- EFT ID: 58272b842459774abc128d50
 ARC9.LoadAttachment(ATT, "eft_saiga12_rs_mount")
 
@@ -515,6 +573,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_saiga12_rs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.003,
+}))
+
+
 -- EFT ID: 57a9b9ce2459770ee926038d
 ARC9.LoadAttachment(ATT, "eft_saiga12_rs_std")
 
@@ -531,9 +594,6 @@ ATT.Description = [[A folding polymer AK-styled stock for SOK-12, manufactured b
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
 
 ATT.Category = {"eft_saiga12_stock"}
 
@@ -546,6 +606,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -24,
+    weight = 0.35,
+}))
 
 
 -- EFT ID: 57616ca52459773c69055192
@@ -623,9 +690,6 @@ ATT.Description = [[A lightweight handguard from the Titan Quad Rail System for 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.017
 
 ATT.HasHG = true 
@@ -675,6 +739,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.2),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.408,
+}))
 
 
 -- EFT ID: 674fe57721a9aa6be6045b96
@@ -727,6 +797,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 674fe89a4472d471fb0f07d8
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titantop")
 
@@ -742,7 +817,6 @@ ATT.Description = [[A receiver top rail for the Titan Quad Rail System, manufact
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 
 ATT.ActivateElements = {"nodovetail"}
 ATT.Category = {"eft_saiga12_titan_backmount"}
@@ -765,6 +839,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.09,
+}))
+
+
 -- EFT ID: 674fe8b9362ea1f88b0e278d
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titanrecuver")
 
@@ -779,9 +859,13 @@ ATT.Description = [[A front sight modeled after the popular Heckler & Koch iron 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 0.5
 
 ATT.Category = {"eft_chaos_fs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
 
 -- EFT ID: 674fe8dd362ea1f88b0e2792
 ARC9.LoadAttachment(ATT, "eft_saiga12_fs_chaos")
@@ -797,7 +881,6 @@ ATT.Description = [[A rear sight modeled after the popular Heckler & Koch iron s
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 0.5
 
 ATT.Category = {"eft_chaos_rs"}
 
@@ -810,6 +893,11 @@ ATT.Sights = {
         ViewModelFOV = 54
     }
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.14,
+}))
+
 
 -- EFT ID: 674fe8cf4472d471fb0f07df
 ARC9.LoadAttachment(ATT, "eft_saiga12_rs_chaos")
@@ -829,7 +917,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_mag"}
 
-ATT.EFTErgoAdd = -24
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.EFTImprovedMagCheck = true
 
@@ -840,6 +927,13 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_drummd20.mdl"
 
 ATT.ActivateElements = {"magdrum2"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -17,
+    weight = 0.66,
+    malfunctionChance = 0.27,
+}))
+
 
 -- EFT ID: 674fe8f6f34d761ab8020cc8
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_md20")

@@ -12,9 +12,6 @@ ATT.Description = [[A 510mm long barrel for the KS-23 23x75mm pump-action shotgu
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -4
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.SpreadOverride = 25.78 * ARC9.MOAToAcc
 
 ATT.MuzzleEffectQCA = 4
@@ -23,6 +20,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_barrel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -4,
+    weight = 0.91,
+    velocity = 1.4,
+}))
+
 
 -- EFT ID: 5e848d1c264f7c180b5e35a9
 ARC9.LoadAttachment(ATT, "eft_ks23_barrel_510")
@@ -38,15 +43,20 @@ ATT.Description = [[A 700mm long barrel for the KS-23 23x75mm pump-action shotgu
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -10
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
 ATT.SpreadOverride = 15.47 * ARC9.MOAToAcc
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_barrel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    recoilModifier = -8,
+    weight = 1.23,
+    velocity = 2.4,
+}))
+
 
 -- EFT ID: 5e848d2eea0a7c419c2f9bfd
 ARC9.LoadAttachment(ATT, "eft_ks23_barrel_700")
@@ -62,12 +72,16 @@ ATT.Description = [[A standard-issue polymer forestock made for the KS-23M shotg
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 5
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.58,
+}))
+
 
 -- EFT ID: 5e848d51e4dbc5266a4ec63b
 ARC9.LoadAttachment(ATT, "eft_ks23_hg_std")
@@ -88,9 +102,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_stock"}
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -24,
+    weight = 0.44,
+}))
+
 
 -- EFT ID: 5e848db4681bea2ada00daa9
 ARC9.LoadAttachment(ATT, "eft_ks23_stock_wood")
@@ -111,7 +129,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_stock"}
 
-ATT.EFTErgoAdd = 8
 
 ATT.Attachments = {
     {
@@ -121,6 +138,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.15,
+}))
+
 
 -- EFT ID: 5e848d99865c0f329958c83b
 ARC9.LoadAttachment(ATT, "eft_ks23_stock_pistol")
@@ -134,14 +157,18 @@ ATT.CompactName = "KS23M steel"
 ATT.Icon = Material("entities/eft_ks23_attachments/st.png", "mips smooth")
 ATT.Description = [[A steel wired stock for the KS-23M shotgun, manufactured by TOZ..]]
 
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.75
-ATT.VisualRecoilMult = 0.75
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ks23_steel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11,
+    recoilModifier = -18,
+    weight = 0.26,
+}))
+
 
 -- EFT ID: 5e848dc4e4dbc5266a4ec63d
 ARC9.LoadAttachment(ATT, "eft_ks23_stock_steel")
@@ -155,8 +182,6 @@ ATT.CompactName = "KS-23Mx3"
 ATT.Icon = Material("entities/eft_ks23_attachments/3.png", "mips smooth")
 ATT.Description = [[A 3-shell capacity magazine cap for KS-23M 23x75mm shells.]]
 
-ATT.EFTErgoAdd = -6
-
 ATT.SortOrder = 1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -168,6 +193,12 @@ ATT.ClipSize = 3
 ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.95
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.01,
+    malfunctionChance = 0.05,
+}))
+
 
 -- EFT ID: 5f647d9f8499b57dc40ddb93
 ARC9.LoadAttachment(ATT, "eft_ks23_mag_3")
@@ -200,8 +231,6 @@ ATT.Sights = {
         ViewModelFOV = 53,
     }
 }
-ATT.EFTErgoAdd = -2
-
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_komz_rusak_marks.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
@@ -210,6 +239,12 @@ ATT.HoloSightColorable = false
 
 ATT.ModelOffset = Vector(1.12, 0, -0.041)
 ATT.ModelAngleOffset = Angle(0, -90, -0)
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.24,
+}))
 
 
 -- EFT ID: 65f05b9d39dab9e9ec049cfd
@@ -241,24 +276,24 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_23x75_sh10.printname")
 
-ATT.DamageMax = 87 * mult1270
-ATT.DamageMin = 66 * mult1270
-ATT.PhysBulletMuzzleVelocity = 270 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrangesg
-
-ATT.Penetration =      11 *2.54/100/0.0254
-ATT.PenetrationDelta = 20/100
-ATT.ArmorPiercing =    20/100
-ATT.RicochetChance =   20
-
 ATT.Num = 8
--- ATT.VisualRecoilMult = 1.25
--- ATT.SpreadMult = 0.1
-ATT.HeatPerShotMult = 1.8
 
 ATT.Category = {"eft_ammo_23x75"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.08,
+    damage = 87,
+    ballisticCoeficient = 0.022,
+    initialSpeed = 270,
+    penetrationPower = 11,
+    armorDamage = 20,
+    penetrationChance = 0.12,
+    ricochetChance = 0.2,
+    heatFactor = 2.8,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.175,
+}), "shotgun")
+
 
 -- EFT ID: 5e85a9a6eacf8c039e4e2ac1
 ARC9.LoadAttachment(ATT, "eft_ammo_23x75_sh10")
@@ -280,25 +315,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_23x75_sh25.printname")
 
-ATT.DamageMax = 78 * mult1270
-ATT.DamageMin = 56.7 * mult1270
-ATT.PhysBulletMuzzleVelocity = 375 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrangesg
-
-ATT.Penetration =      10 *2.54/100/0.0254
-ATT.PenetrationDelta = 20/100
-ATT.ArmorPiercing =    20/100
-ATT.RicochetChance =   20
-
 ATT.Num = 8
-ATT.RecoilMult = 1.1
-ATT.VisualRecoilMult = 1.1
-ATT.SpreadMult = 0.8
-ATT.HeatPerShotMult = 2
 
 ATT.Category = {"eft_ammo_23x75"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.08,
+    damage = 78,
+    ballisticCoeficient = 0.022,
+    initialSpeed = 375,
+    accuracyModifier = 0.2,
+    recoilModifier = 0.1,
+    penetrationPower = 10,
+    armorDamage = 20,
+    penetrationChance = 0.1,
+    ricochetChance = 0.2,
+    heatFactor = 2.975,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.175,
+}), "shotgun")
+
 
 -- EFT ID: 5f647f31b6238e5dd066e196
 ARC9.LoadAttachment(ATT, "eft_ammo_23x75_sh25")
@@ -320,25 +356,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_23x75_bar.printname")
 
-ATT.DamageMax = 192 * mult1270
-ATT.DamageMin = 143.8 * mult1270
-ATT.PhysBulletMuzzleVelocity = 420 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      39 *2.54/100/0.0254
-ATT.PenetrationDelta = 75/100
-ATT.ArmorPiercing =    75/100
-ATT.RicochetChance =   40/100
-
 ATT.Num = 1
-ATT.RecoilMult = 1.25
-ATT.VisualRecoilMult = 1.25
-ATT.SpreadMult = 1.05
-ATT.HeatPerShotMult = 2.32
 
 ATT.Category = {"eft_ammo_23x75"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.08,
+    damage = 192,
+    ballisticCoeficient = 0.287,
+    initialSpeed = 420,
+    accuracyModifier = -0.05,
+    recoilModifier = 0.25,
+    penetrationPower = 39,
+    armorDamage = 75,
+    penetrationChance = 0.6,
+    ricochetChance = 0.4,
+    heatFactor = 3.325,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.175,
+}), "shotgun")
+
 
 -- EFT ID: 5e85aa1a988a8701445df1f5
 ARC9.LoadAttachment(ATT, "eft_ammo_23x75_bar")
@@ -442,7 +479,7 @@ end
 
 ATT.Category = {"eft_ammo_23x75"}
 
--- EFT ID: 5e85a9f4add9fe03027d9bf1
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_ammo_23x75_zvezda")
 
 end

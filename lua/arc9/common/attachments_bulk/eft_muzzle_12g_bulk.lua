@@ -15,9 +15,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_12g_silencerco_salvo_adaper_12g.mdl"
 
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-ATT.SpreadMult = 0.99
 ATT.HeatCapacityMult = 0.987
 ATT.PhysBulletMuzzleVelocityMult = 1.0025
 
@@ -32,6 +29,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(1, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    accuracyModifier = 1,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 5b363e1b5acfc4771e1c5e80
@@ -51,9 +55,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_12g_silencerco_salvo_adaper_12g.mdl"
 
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
-ATT.SpreadMult = 0.99
 ATT.HeatCapacityMult = 0.987
 ATT.PhysBulletMuzzleVelocityMult = 1.0025
 
@@ -68,6 +69,14 @@ ATT.Attachments = {
         Icon_Offset = Vector(1, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -3,
+    accuracyModifier = 1,
+    weight = 0.11,
+}))
+
 
 -- EFT ID: 5b363dea5acfc4771e1c5e7e
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_chokeapadter")
@@ -85,7 +94,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_12g_me_muzzle_adapter.mdl"
 
-ATT.EFTErgoAdd = -1
 ATT.HeatCapacityMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 1.0025
 
@@ -100,6 +108,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(1, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 5c0111ab0db834001966914d
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_mecyl")
@@ -117,13 +131,17 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_12g_remington.mdl"
 
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
-ATT.SpreadMult = 0.95
 ATT.HeatCapacityMult = 0.987
 ATT.PhysBulletMuzzleVelocityMult = 1.0025
 
 ATT.Category = {"eft_12ga_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -5,
+    accuracyModifier = 5,
+    weight = 0.023,
+}))
+
 
 -- EFT ID: 560838c94bdc2d77798b4569
 ARC9.LoadAttachment(ATT, "eft_muzzle_12g_rtc")
@@ -144,9 +162,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_saiga12_css_monster_caw_large_12g.mdl"
 
 
-ATT.EFTErgoAdd = -5
-ATT.RecoilMult = 0.76
-ATT.VisualRecoilMult = 0.76
 ATT.HeatCapacityMult = 0.98
 
 ATT.MuzzleDevice = true
@@ -155,6 +170,13 @@ ATT.BarrelLengthAdd = 2
 
 
 ATT.Category = {"eft_saiga12_muzzle", "eft_12k_cylinder"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    recoilModifier = -19,
+    weight = 0.34,
+}))
 
 
 -- EFT ID: 59fb137a86f7740adb646af1
@@ -175,9 +197,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_12g_red_heat_gk-02_12g.mdl"
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.86
-ATT.VisualRecoilMult = 0.86
 ATT.HeatCapacityMult = 0.983
 ATT.PhysBulletMuzzleVelocityMult = 1.0025
 
@@ -187,6 +206,13 @@ ATT.BarrelLengthAdd = 2
 
 
 ATT.Category = {"eft_saiga12_muzzle", "eft_12k_cylinder"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -13.5,
+    weight = 0.233,
+}))
 
 
 -- EFT ID: 58272d7f2459774f6311ddfd
@@ -208,10 +234,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_12g_hexagon_12k.mdl"
 
 
-ATT.EFTErgoAdd = -27
-ATT.RecoilMult = 0.84
-ATT.VisualRecoilMult = 0.84
-ATT.SpreadMult = 1.01
 ATT.HeatCapacityMult = 1.18
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
@@ -225,6 +247,14 @@ ATT.BarrelLengthAdd = 5
 ATT.Silencer = true
 
 ATT.Category = {"eft_saiga12_muzzle", "eft_12k_cylinder"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -15,
+    recoilModifier = -5,
+    weight = 0.493,
+    velocity = 0.9,
+}))
 
 
 -- EFT ID: 59c0ec5b86f77435b128bfca
@@ -246,10 +276,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_base_silencerco_salvo_12g.mdl"
 
 
-ATT.EFTErgoAdd = -28
-ATT.RecoilMult = 0.82
-ATT.VisualRecoilMult = 0.82
-ATT.SpreadMult = 0.93
 ATT.HeatCapacityMult = 1.18
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
@@ -263,6 +289,14 @@ ATT.BarrelLengthAdd = 5
 ATT.Silencer = true
 
 ATT.Category = {"eft_salvo12"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -28,
+    recoilModifier = -13,
+    weight = 0.97,
+    velocity = 1.2,
+}))
 
 
 -- EFT ID: 5b363dd25acfc4001a598fd2
@@ -287,7 +321,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.FoldSights = true
 
-ATT.EFTErgoAdd = -3
 
 ATT.Sights = {
     {
@@ -306,6 +339,12 @@ ATT.HoloSightSize = 200
 ATT.HoloSightColorable = false
 
 ATT.ModelOffset = Vector(0, 0, 0)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.21,
+}))
+
 
 -- EFT ID: 609b9e31506cf869cf3eaf41
 ARC9.LoadAttachment(ATT, "eft_optic_targetring")

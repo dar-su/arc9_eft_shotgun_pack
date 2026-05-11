@@ -12,9 +12,6 @@ ATT.Description = [[A sawn-off 325mm barrel for the Remington Model 870 12 gauge
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.Spread = 22.35 * ARC9.MOAToAcc
 
 ATT.HeatCapacityMult = 1.02
@@ -37,6 +34,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.899,
+    velocity = 2.4,
+}))
+
+
 -- EFT ID: 5a787fdfc5856700142fdd9a
 ARC9.LoadAttachment(ATT, "eft_m870_barrel_325")
 
@@ -52,9 +57,6 @@ ATT.Description = [[A 355mm barrel for the Remington Model 870 12 gauge shotgun.
 ATT.HasBarrel = true 
 ATT.BarrelLengthAdd = 2
 
-ATT.EFTErgoAdd = -3
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.Spread = 22.00 * ARC9.MOAToAcc
 
 ATT.HeatCapacityMult = 1.04
@@ -77,6 +79,14 @@ ATT.Sights = {
     }
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -2,
+    weight = 0.968,
+    velocity = 3.4,
+}))
+
+
 -- EFT ID: 5a787f25c5856700186c4ab9
 ARC9.LoadAttachment(ATT, "eft_m870_barrel_355")
 
@@ -92,9 +102,6 @@ ATT.Description = [[A 508mm barrel for the Remington Model 870 12 gauge shotgun.
 ATT.HasBarrel = true 
 ATT.BarrelLengthAdd = 6
 
-ATT.EFTErgoAdd = -8
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 ATT.Spread = 18.91 * ARC9.MOAToAcc
 
 ATT.HeatCapacityMult = 1.08
@@ -122,7 +129,15 @@ ATT.Attachments = {
 }
 
 
--- EFT ID: 5a787ebcc5856700142fdd98
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    recoilModifier = -6,
+    weight = 1.455,
+    velocity = 5.4,
+}))
+
+
+-- EFT ID: 5a787f7ac5856700177af660
 ARC9.LoadAttachment(ATT, "eft_m870_barrel_508")
 
 ///////////////////////////////////////      eft_m870_barrel_508fs
@@ -137,9 +152,6 @@ ATT.Description = [[A 508mm 12 gauge barrel with a fixed sight for the Remington
 ATT.HasBarrel = true 
 ATT.BarrelLengthAdd = 6
 
-ATT.EFTErgoAdd = -7
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 ATT.Spread = 18.91 * ARC9.MOAToAcc
 
 ATT.HeatCapacityMult = 1.08
@@ -177,6 +189,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    recoilModifier = -6,
+    weight = 1.455,
+    velocity = 5.4,
+}))
+
+
 -- EFT ID: 5a787ebcc5856700142fdd98
 ARC9.LoadAttachment(ATT, "eft_m870_barrel_508fs")
 
@@ -192,9 +212,6 @@ ATT.Description = [[A 660mm 12 gauge barrel with a vent rib for the Remington Mo
 ATT.HasBarrel = true 
 ATT.BarrelLengthAdd = 12
 
-ATT.EFTErgoAdd = -12
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
 ATT.Spread = 11.00 * ARC9.MOAToAcc
 
 ATT.HeatCapacityMult = 1.14
@@ -223,6 +240,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -9,
+    weight = 1.826,
+    velocity = 5.4,
+}))
+
+
 -- EFT ID: 5a787fadc5856700155a6ca1
 ARC9.LoadAttachment(ATT, "eft_m870_barrel_660")
 
@@ -237,7 +262,6 @@ ATT.Description = [[A classical polymer forend designed for the Remington Model 
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 7
 
 ATT.HeatCapacityMult = 0.98
 ATT.HeatDissipationMult = 0.99
@@ -246,6 +270,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m870_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.121,
+}))
+
 
 -- EFT ID: 5a788089c5856700142fdd9c
 ARC9.LoadAttachment(ATT, "eft_m870_hg_speed")
@@ -267,7 +297,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/moe870_lhik.mdl"
 ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 4, 1)
 
-ATT.EFTErgoAdd = 13
 
 ATT.HeatCapacityMult = 0.975
 ATT.HeatDissipationMult = 0.98
@@ -301,6 +330,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.184,
+}))
+
+
 -- EFT ID: 5a788068c5856700137e4c8f
 ARC9.LoadAttachment(ATT, "eft_m870_hg_moe")
 
@@ -315,7 +350,6 @@ ATT.Description = [[The PR-870 handguard by FAB Defense, made for the Remington 
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 5
 -- sadly (or happily) those lhiks are same as default hold pose
 -- ATT.Model = "models/weapons/arc9/darsu_eft/mods/pr870_lhik.mdl"
 -- ATT.LHIK = true
@@ -352,6 +386,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.22,
+}))
+
+
 -- EFT ID: 5a788031c585673f2b5c1c79
 ARC9.LoadAttachment(ATT, "eft_m870_hg_pr")
 
@@ -364,7 +404,6 @@ ATT.CompactName = "MT Clamp"
 ATT.Icon = Material("entities/eft_m870_attachments/clamp.png", "mips smooth")
 ATT.Description = [[A magazine clamp for the Remington Model 870 produced by Mesa Tactical.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -390,6 +429,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.087,
+}))
+
+
 -- EFT ID: 5a789261c5856700186c65d3
 ARC9.LoadAttachment(ATT, "eft_m870_mount_clamp")
 
@@ -402,7 +447,6 @@ ATT.CompactName = "M870 XS"
 ATT.Icon = Material("entities/eft_m870_attachments/xs.png", "mips smooth")
 ATT.Description = [[A Picatinny rail with a Ghost Ring type rear sight for the Remington Model 870 shotgun, which is mounted on top of the standard receiver.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -418,6 +462,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.1,
+}))
+
+
 -- EFT ID: 5a78948ec5856700177b1124
 ARC9.LoadAttachment(ATT, "eft_m870_mount_xs")
 
@@ -430,7 +480,6 @@ ATT.CompactName = "MTU-028SG"
 ATT.Icon = Material("entities/eft_m870_attachments/utg.png", "mips smooth")
 ATT.Description = [[A Weaver rail for the Remington Model 870 shotgun, which is mounted on the top of receiver. Manufactured by Leapers Inc.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -445,6 +494,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.044,
+}))
+
 
 -- EFT ID: 5a7893c1c585673f2b5c374d
 ARC9.LoadAttachment(ATT, "eft_m870_mount_utg")
@@ -470,7 +525,6 @@ ATT.RHIK = true
 
 ATT.Category = {"eft_m870_stock", "eft_m870_stock_fabagr"}
 
-ATT.EFTErgoAdd = 9
 
 ATT.Attachments = {
     {
@@ -480,6 +534,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.13,
+}))
+
 
 -- EFT ID: 5bfe86a20db834001d23e8f7
 ARC9.LoadAttachment(ATT, "eft_m870_stock_agr")
@@ -493,15 +553,18 @@ ATT.CompactName = "AGR-870 cap"
 ATT.Icon = Material("entities/eft_m870_attachments/cap.png", "mips smooth")
 ATT.Description = [[The FAB Defense protection cap for the AGR-870 pistol grip.]]
 
-ATT.EFTErgoAdd = 2
--- ATT.RecoilMult = 0.75
--- ATT.VisualRecoilMult = 0.75
-ATT.BarrelLengthAdd = -6
+-- -- ATT.BarrelLengthAdd = -6
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m870_agr"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.005,
+}))
+
 
 -- EFT ID: 5bfe86bd0db83400232fe959
 ARC9.LoadAttachment(ATT, "eft_m870_stock_agr_cap")
@@ -515,10 +578,7 @@ ATT.CompactName = "AGR-870 tube"
 ATT.Icon = Material("entities/eft_m870_attachments/tube.png", "mips smooth")
 ATT.Description = [[The FAB Defense 4-position buffer tube, made to fit the AGR-870 pistol grip.]]
 
--- ATT.EFTErgoAdd = 2
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-
+-- 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -533,6 +593,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -0.5,
+    weight = 0.162,
+    velocity = -2.5,
+}))
+
 
 -- EFT ID: 5bfe89510db834001808a127
 ARC9.LoadAttachment(ATT, "eft_m870_stock_agr_tube")
@@ -554,9 +621,13 @@ ATT.BarrelLengthAdd = -6
 
 ATT.Category = {"eft_m870_stock"}
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -6,
+    weight = 0.22,
+}))
+
 
 -- EFT ID: 5a788169c5856700142fdd9e
 ARC9.LoadAttachment(ATT, "eft_m870_stock_raptor")
@@ -577,9 +648,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m870_stock"}
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.58
-ATT.VisualRecoilMult = 0.58
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -29,
+    weight = 0.68,
+}))
+
 
 -- EFT ID: 5a78813bc5856700186c4abe
 ARC9.LoadAttachment(ATT, "eft_m870_stock_sga")
@@ -600,9 +675,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m870_stock"}
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -24,
+    weight = 0.64,
+}))
+
 
 -- EFT ID: 5a7880d0c5856700142fdd9d
 ARC9.LoadAttachment(ATT, "eft_m870_stock_sps")
@@ -627,9 +706,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mesa870_rhik.mdl"
 -- ATT.LHIK = true
 ATT.RHIK = true
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.Attachments = {
     {
@@ -648,6 +724,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.4,
+}))
+
+
 -- EFT ID: 5ae35b315acfc4001714e8b0
 ARC9.LoadAttachment(ATT, "eft_m870_stock_leo")
 
@@ -660,7 +742,6 @@ ATT.CompactName = "M870x4"
 ATT.Icon = Material("entities/eft_m870_attachments/4.png", "mips smooth")
 ATT.Description = [[A 4-shell capacity magazine cap by Remington, for Remington Model 870 12ga shells.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -674,6 +755,13 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.01,
+    malfunctionChance = 0.01,
+}))
+
+
 -- EFT ID: 5a7882dcc5856700177af662
 ARC9.LoadAttachment(ATT, "eft_m870_mag_4")
 
@@ -686,7 +774,6 @@ ATT.CompactName = "M870x7"
 ATT.Icon = Material("entities/eft_m870_attachments/7.png", "mips smooth")
 ATT.Description = [[A 7-shell capacity magazine cap by Remington, for Remington Model 870 12ga shells.]]
 
-ATT.EFTErgoAdd = -2
 
 ATT.SortOrder = 7
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -700,6 +787,13 @@ ATT.ChamberSize = 1
 
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.25,
+    malfunctionChance = 0.01,
+}))
+
+
 -- EFT ID: 5a78830bc5856700137e4c90
 ARC9.LoadAttachment(ATT, "eft_m870_mag_7")
 
@@ -712,7 +806,6 @@ ATT.CompactName = "M870x10"
 ATT.Icon = Material("entities/eft_m870_attachments/10.png", "mips smooth")
 ATT.Description = [[A 170-shell capacity magazine cap by Remington, for Remington Model 870 12ga shells.]]
 
-ATT.EFTErgoAdd = -6
 
 ATT.SortOrder = 10
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -727,6 +820,13 @@ ATT.ChamberSize = 1
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.ExcludeElements = {"eft_muzzle_12g_salvo", "eft_muzzle_12g_hexasup"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.4,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 5a78832ec5856700155a6ca3
 ARC9.LoadAttachment(ATT, "eft_m870_mag_10")

@@ -61,3 +61,4 @@ SWEP.Attachments = {
 }
 
 SWEP.EFTErgo = 48
+SWEP.EFTWeight = 1.1

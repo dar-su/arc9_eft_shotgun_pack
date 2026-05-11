@@ -72,6 +72,7 @@ SWEP.ChamberSize = 0 -- no mag
 SWEP.ClipSize = 2
 
 SWEP.EFTErgo = 44
+SWEP.EFTWeight = 1.88
 SWEP.BarrelLength = 32
 SWEP.Ammo = "Buckshot"
 

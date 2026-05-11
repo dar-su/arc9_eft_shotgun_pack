@@ -1,9 +1,5 @@
 local ATT = {}
 
-local dmgrange = (GetConVar("arc9_eft_mindmgrange"):GetInt() or 1000)/1000
-local dmgrangesg = (GetConVar("arc9_eft_mindmgrange_sg"):GetInt() or 1000)/1000
-local mult1270 = GetConVar("arc9_eft_mult_shotgun"):GetFloat() or 0.5
-
 ///////////////////////////////////////      eft_ammo_12x70_50bmg
 
 
@@ -22,25 +18,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_50bmg.printname")
 
-ATT.DamageMax = 197 * mult1270
-ATT.DamageMin = 163 * mult1270
-ATT.PhysBulletMuzzleVelocity = 410 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      26 *2.54/100/0.0254
-ATT.PenetrationDelta = 57/100
-ATT.ArmorPiercing =    57/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
-ATT.RecoilMult = 1.25
-ATT.VisualRecoilMult = 1.25
-ATT.SpreadMult = 0.1
-ATT.HeatPerShotMult = 2
 
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.055,
+    damage = 197,
+    ballisticCoeficient = 0.582,
+    initialSpeed = 410,
+    accuracyModifier = 0.9,
+    recoilModifier = 0.25,
+    penetrationPower = 26,
+    armorDamage = 57,
+    penetrationChance = 0.28,
+    ricochetChance = 0.1,
+    heatFactor = 2.51,
+    failureToFeedChance = 0.11,
+    misfireChance = 0.336,
+    heavyBleedModifier = 0.15,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e68c4a4b9361b93413f79
@@ -65,24 +63,24 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_525mm.printname")
 
-ATT.DamageMax = 37 * mult1270
-ATT.DamageMin = 28.3 * mult1270
-ATT.PhysBulletMuzzleVelocity = 330 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrangesg
-
-ATT.Penetration =      1 *2.54/100/0.0254
-ATT.PenetrationDelta = 15/100
-ATT.ArmorPiercing =    15/100
-ATT.RicochetChance =   0
-
 ATT.Num = 8
--- ATT.VisualRecoilMult = 1.25
--- ATT.SpreadMult = 0.1
 
 ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.044,
+    damage = 37,
+    ballisticCoeficient = 0.025,
+    initialSpeed = 330,
+    penetrationPower = 1,
+    armorDamage = 15,
+    penetrationChance = 0.02,
+    heatFactor = 2.008,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.266,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6772a4b936088465b17c
@@ -106,24 +104,28 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_pir.printname")
 
-ATT.DamageMax = 25 * mult1270
-ATT.DamageMin = 21 * mult1270
-ATT.PhysBulletMuzzleVelocity = 310 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrangesg
-
-ATT.Penetration =      24 *2.54/100/0.0254
-ATT.PenetrationDelta = 22/100
-ATT.ArmorPiercing =    22/100
-ATT.RicochetChance =   0
-
 ATT.Num = 10
--- ATT.VisualRecoilMult = 1.25
--- ATT.SpreadMult = 0.1
 
 ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+    damage = 25,
+    ballisticCoeficient = 0.257,
+    initialSpeed = 310,
+    accuracyModifier = -0.05,
+    penetrationPower = 24,
+    armorDamage = 22,
+    penetrationChance = 0.2,
+    ricochetChance = 0.1,
+    heatFactor = 2.1084,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.175,
+    lightBleedModifier = 0.15,
+    heavyBleedModifier = 0.15,
+}), "shotgun")
 
 
 -- EFT ID: 64b8ee384b75259c590fa89b
@@ -148,24 +150,24 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_7mm.printname")
 
-ATT.DamageMax = 39 * mult1270
-ATT.DamageMin = 24.57 * mult1270
-ATT.PhysBulletMuzzleVelocity = 415 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrangesg
-
-ATT.Penetration =      3 *2.54/100/0.0254
-ATT.PenetrationDelta = 26/100
-ATT.ArmorPiercing =    26/100
-ATT.RicochetChance =   0
-
 ATT.Num = 8
--- ATT.VisualRecoilMult = 1.25
--- ATT.SpreadMult = 0.1
 
 ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+    damage = 39,
+    ballisticCoeficient = 0.013,
+    initialSpeed = 415,
+    penetrationPower = 3,
+    armorDamage = 26,
+    penetrationChance = 0.02,
+    heatFactor = 2.0331,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.266,
+}), "shotgun")
 
 
 -- EFT ID: 560d5e524bdc2d25448b4571
@@ -190,25 +192,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_ap20.printname")
 
-ATT.DamageMax = 164 * mult1270
-ATT.DamageMin = 121.67 * mult1270
-ATT.PhysBulletMuzzleVelocity = 510 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      37 *2.54/100/0.0254
-ATT.PenetrationDelta = 65/100
-ATT.ArmorPiercing =    65/100
-ATT.RicochetChance =   10/100
-ATT.HeatPerShotMult = 2.2
-
 ATT.Num = 1
-ATT.RecoilMult = 1.5
-ATT.VisualRecoilMult = 1.5
-ATT.SpreadMult = 0.2
 
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+    damage = 164,
+    ballisticCoeficient = 0.383,
+    initialSpeed = 510,
+    accuracyModifier = 0.8,
+    recoilModifier = 0.5,
+    penetrationPower = 37,
+    armorDamage = 65,
+    penetrationChance = 0.36,
+    ricochetChance = 0.1,
+    heatFactor = 2.4849,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.21,
+    heavyBleedModifier = 0.1,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e68a8a4b9360b6c0d54e2
@@ -233,25 +237,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_dual_sabot.printname")
 
-ATT.DamageMax = 85 * mult1270
-ATT.DamageMin = 49 * mult1270
-ATT.PhysBulletMuzzleVelocity = 415 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      17 *2.54/100/0.0254
-ATT.PenetrationDelta = 65/100
-ATT.ArmorPiercing =    65/100
-ATT.RicochetChance =   10/100
-ATT.HeatPerShotMult = 1.5
-
 ATT.Num = 2
-ATT.RecoilMult = 1.15
-ATT.VisualRecoilMult = 1.15
-ATT.SpreadMult = 0.1
-
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+    damage = 85,
+    ballisticCoeficient = 0.074,
+    initialSpeed = 415,
+    accuracyModifier = 1,
+    recoilModifier = 0.15,
+    penetrationPower = 17,
+    armorDamage = 65,
+    penetrationChance = 0.25,
+    ricochetChance = 0.1,
+    heatFactor = 2.1335,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.196,
+    heavyBleedModifier = 0.15,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e68dea4b9361bcc29e659
@@ -276,25 +281,24 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_express.printname")
 
-ATT.DamageMax = 35 * mult1270
-ATT.DamageMin = 25 * mult1270
-ATT.PhysBulletMuzzleVelocity = 430 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrangesg
-
-ATT.Penetration =      3 *2.54/100/0.0254
-ATT.PenetrationDelta = 26/100
-ATT.ArmorPiercing =    26/100
-ATT.RicochetChance =   0
-
 ATT.Num = 9
--- ATT.RecoilMult = 1.15
--- ATT.VisualRecoilMult = 1.25
-ATT.SpreadMult = 0.85
-
 ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.048,
+    damage = 35,
+    ballisticCoeficient = 0.024,
+    initialSpeed = 430,
+    accuracyModifier = 0.15,
+    penetrationPower = 3,
+    armorDamage = 26,
+    penetrationChance = 0.02,
+    heatFactor = 2.259,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.224,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e67fba4b9361bc73bc779
@@ -319,25 +323,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_flechette.printname")
 
-ATT.DamageMax = 25 * mult1270
-ATT.DamageMin = 24 * mult1270
-ATT.PhysBulletMuzzleVelocity = 320 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrangesg
-
-ATT.Penetration =      31 *2.54/100/0.0254
-ATT.PenetrationDelta = 26/100
-ATT.ArmorPiercing =    26/100
-ATT.RicochetChance =   0/100
-
 ATT.Num = 8
--- ATT.RecoilMult = 1.15
--- ATT.VisualRecoilMult = 1.25
-ATT.SpreadMult = 1.1
-ATT.HeatPerShotMult = 1.6
 
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.04,
+    damage = 25,
+    ballisticCoeficient = 0.257,
+    initialSpeed = 320,
+    accuracyModifier = -0.1,
+    penetrationPower = 31,
+    armorDamage = 26,
+    penetrationChance = 0.3,
+    heatFactor = 2.1586,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.21,
+    lightBleedModifier = 0.25,
+    heavyBleedModifier = 0.25,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6911a4b9361bd5780d52
@@ -362,25 +367,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_ftx.printname")
 
-ATT.DamageMax = 183 * mult1270
-ATT.DamageMin = 123.7 * mult1270
-ATT.PhysBulletMuzzleVelocity = 480 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      20 *2.54/100/0.0254
-ATT.PenetrationDelta = 50/100
-ATT.ArmorPiercing =    50/100
-ATT.RicochetChance =   10/100
 
 ATT.Num = 1
-ATT.RecoilMult = 0.75
-ATT.VisualRecoilMult = 0.75
-ATT.SpreadMult = 0.05
-ATT.HeatPerShotMult = 1.5
 
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.026,
+    damage = 183,
+    ballisticCoeficient = 0.188,
+    initialSpeed = 480,
+    accuracyModifier = 1.35,
+    recoilModifier = -0.25,
+    penetrationPower = 20,
+    armorDamage = 50,
+    penetrationChance = 0.28,
+    ricochetChance = 0.1,
+    heatFactor = 2.1837,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.14,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e68e6a4b9361c140bcfe0
@@ -405,25 +412,26 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_grizzly40.printname")
 
-ATT.DamageMax = 190 * mult1270
-ATT.DamageMin = 138.7 * mult1270
-ATT.PhysBulletMuzzleVelocity = 390 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      12 *2.54/100/0.0254
-ATT.PenetrationDelta = 48/100
-ATT.ArmorPiercing =    48/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
-ATT.RecoilMult = 1.2
-ATT.VisualRecoilMult = 1.2
-ATT.SpreadMult = 0.2
-ATT.HeatPerShotMult = 1.5
-
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.055,
+    damage = 190,
+    ballisticCoeficient = 0.222,
+    initialSpeed = 390,
+    accuracyModifier = 0.8,
+    recoilModifier = 0.2,
+    penetrationPower = 12,
+    armorDamage = 48,
+    penetrationChance = 0.2,
+    ricochetChance = 0.1,
+    heatFactor = 2.02055,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.224,
+    heavyBleedModifier = 0.1,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6869a4b9361c140bcfde
@@ -448,25 +456,28 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_hpcopper.printname")
 
-ATT.DamageMax = 206 * mult1270
-ATT.DamageMin = 123.5 * mult1270
-ATT.PhysBulletMuzzleVelocity = 442 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      14 *2.54/100/0.0254
-ATT.PenetrationDelta = 46/100
-ATT.ArmorPiercing =    46/100
-ATT.RicochetChance =   10/100
 
 ATT.Num = 1
-ATT.RecoilMult = 1.1
-ATT.VisualRecoilMult = 1.1
-ATT.SpreadMult = 0.04
-ATT.HeatPerShotMult = 1.5
-
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.043,
+    damage = 206,
+    ballisticCoeficient = 0.099,
+    initialSpeed = 442,
+    accuracyModifier = 1.5,
+    recoilModifier = 0.1,
+    penetrationPower = 14,
+    armorDamage = 46,
+    penetrationChance = 0.22,
+    ricochetChance = 0.1,
+    heatFactor = 2.0582,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.154,
+    lightBleedModifier = 0.35,
+    heavyBleedModifier = 0.25,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e68b3a4b9361bca7e50b5
@@ -491,25 +502,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_magnum.printname")
 
-ATT.DamageMax = 50 * mult1270
-ATT.DamageMin = 36.1 * mult1270
-ATT.PhysBulletMuzzleVelocity = 385 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrangesg
-
-ATT.Penetration =      2 *2.54/100/0.0254
-ATT.PenetrationDelta = 26/100
-ATT.ArmorPiercing =    26/100
-ATT.RicochetChance =   0/100
-
 ATT.Num = 8
--- ATT.RecoilMult = 1.15
--- ATT.VisualRecoilMult = 1.25
-ATT.SpreadMult = 0.85
-
 ATT.ActivateElements = {"eft_ammo_12x70_std"}
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.059,
+    damage = 50,
+    ballisticCoeficient = 0.022,
+    initialSpeed = 385,
+    accuracyModifier = -0.15,
+    recoilModifier = 1.15,
+    penetrationPower = 2,
+    armorDamage = 26,
+    penetrationChance = 0.05,
+    heatFactor = 2.4598,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.196,
+    lightBleedModifier = 0.2,
+    heavyBleedModifier = 0.1,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6806a4b936088465b17e
@@ -534,25 +547,25 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_poleva3.printname")
 
-ATT.DamageMax = 140 * mult1270
-ATT.DamageMin = 88 * mult1270
-ATT.PhysBulletMuzzleVelocity = 410 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      17 *2.54/100/0.0254
-ATT.PenetrationDelta = 40/100
-ATT.ArmorPiercing =    40/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.SpreadMult = 0.09
-ATT.HeatPerShotMult = 1.5
-
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.044,
+    damage = 140,
+    ballisticCoeficient = 0.116,
+    initialSpeed = 410,
+    accuracyModifier = 1.1,
+    recoilModifier = -0.15,
+    penetrationPower = 17,
+    armorDamage = 40,
+    penetrationChance = 0.17,
+    ricochetChance = 0.1,
+    heatFactor = 2.0833,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.266,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6891a4b9361bd473feea
@@ -577,25 +590,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_poleva6u.printname")
 
-ATT.DamageMax = 150 * mult1270
-ATT.DamageMin = 84.7 * mult1270
-ATT.PhysBulletMuzzleVelocity = 430 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      20 *2.54/100/0.0254
-ATT.PenetrationDelta = 50/100
-ATT.ArmorPiercing =    50/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
-ATT.SpreadMult = 0.085
-ATT.HeatPerShotMult = 1.6
 
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.048,
+    damage = 150,
+    ballisticCoeficient = 0.057,
+    initialSpeed = 430,
+    accuracyModifier = 1.15,
+    recoilModifier = -0.1,
+    penetrationPower = 20,
+    armorDamage = 50,
+    penetrationChance = 0.2,
+    ricochetChance = 0.1,
+    heatFactor = 2.3594,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.224,
+    heavyBleedModifier = 0.05,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e689ca4b9361bc8618956
@@ -620,25 +635,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_rip.printname")
 
-ATT.DamageMax = 265 * mult1270
-ATT.DamageMin = 150.19 * mult1270
-ATT.PhysBulletMuzzleVelocity = 410 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      2 *2.54/100/0.0254
-ATT.PenetrationDelta = 11/100
-ATT.ArmorPiercing =    11/100
-ATT.RicochetChance =   1/100
-
 ATT.Num = 1
-ATT.RecoilMult = 1.1
-ATT.VisualRecoilMult = 1.1
-ATT.SpreadMult = 0.04
-ATT.HeatPerShotMult = 1.6
 
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.04,
+    damage = 265,
+    ballisticCoeficient = 0.055,
+    initialSpeed = 410,
+    accuracyModifier = 0.8,
+    recoilModifier = 0.35,
+    penetrationPower = 2,
+    armorDamage = 11,
+    ricochetChance = 0.01,
+    heatFactor = 2.3845,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.21,
+    lightBleedModifier = 0.4,
+    heavyBleedModifier = 0.25,
+}), "shotgun")
 
 
 -- EFT ID: 5c0d591486f7744c505b416f
@@ -663,25 +680,27 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_slug.printname")
 
-ATT.DamageMax = 167 * mult1270
-ATT.DamageMin = 107.7 * mult1270
-ATT.PhysBulletMuzzleVelocity = 370 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      15 *2.54/100/0.0254
-ATT.PenetrationDelta = 55/100
-ATT.ArmorPiercing =    55/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
--- ATT.RecoilMult = 1.1
--- ATT.VisualRecoilMult = 1.1
-ATT.SpreadMult = 0.085
-ATT.HeatPerShotMult = 1.5
 
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+    damage = 167,
+    ballisticCoeficient = 0.121,
+    initialSpeed = 370,
+    accuracyModifier = 1.2,
+    penetrationPower = 15,
+    armorDamage = 55,
+    penetrationChance = 0.2,
+    ricochetChance = 0.1,
+    heatFactor = 2.1084,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.175,
+    lightBleedModifier = 0.1,
+    heavyBleedModifier = 0.15,
+}), "shotgun")
 
 
 -- EFT ID: 58820d1224597753c90aeb13
@@ -706,25 +725,28 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_12x70_superformance.printname")
 
-ATT.DamageMax = 220 * mult1270
-ATT.DamageMin = 144.2 * mult1270
-ATT.PhysBulletMuzzleVelocity = 594 /0.0254
-
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      5 *2.54/100/0.0254
-ATT.PenetrationDelta = 12/100
-ATT.ArmorPiercing =    12/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.SpreadMult = 0.05
-ATT.HeatPerShotMult = 1.2
 
 ATT.Category = {"eft_ammo_12x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.034,
+    damage = 220,
+    ballisticCoeficient = 0.2,
+    initialSpeed = 594,
+    accuracyModifier = 1.7,
+    recoilModifier = -0.15,
+    penetrationPower = 5,
+    armorDamage = 12,
+    penetrationChance = 0.05,
+    ricochetChance = 0.1,
+    heatFactor = 2.04565,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.154,
+    lightBleedModifier = 0.3,
+    heavyBleedModifier = 0.4,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e68d1a4b93622fe60e845

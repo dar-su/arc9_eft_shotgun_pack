@@ -12,10 +12,6 @@ ATT.Description = "A 20 inch (508mm) barrel for Mossberg 590A1 12 gauge pump-act
 ATT.HasBarrel = true 
 ATT.BarrelLengthAdd = 6
 
-ATT.EFTErgoAdd = -8
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
-ATT.SpreadMult = 0.95
 ATT.HeatCapacityMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.052
 
@@ -36,6 +32,15 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    recoilModifier = -6,
+    accuracyModifier = 5,
+    weight = 1.52,
+    velocity = 5.2,
+}))
+
+
 -- EFT ID: 5e87071478f43e51ca2de5e1
 ARC9.LoadAttachment(ATT, "eft_m590_barrel_508")
 
@@ -49,7 +54,6 @@ ATT.CompactName = "SpeedFeed"
 ATT.Icon = Material("entities/eft_m590_attachments/mossberg_590a1_speedfeed_short_handguard.png", "mips smooth")
 ATT.Description = "A polymer handguard made for the Mossberg 590A1 pump-action shotgun."
 
-ATT.EFTErgoAdd = 7
 ATT.HeatCapacityMult = 1.024
 
 ATT.HasHG = true 
@@ -58,6 +62,12 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m590_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.65,
+}))
+
 
 -- EFT ID: 5e87076ce2db31558c75a11d
 ARC9.LoadAttachment(ATT, "eft_m590_hg_speed")
@@ -71,7 +81,6 @@ ATT.CompactName = "Magpul MOE"
 ATT.Icon = Material("entities/eft_m590_attachments/mossberg_590a1_magpul_moe_forestock.png", "mips smooth")
 ATT.Description = "The MOE handguard, designed for Mossberg 500/590 shotguns. Manufactured by Magpul."
 
-ATT.EFTErgoAdd = 13
 ATT.HeatCapacityMult = 1.019
 
 ATT.HasHG = true 
@@ -111,6 +120,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.6,
+}))
+
+
 -- EFT ID: 5eea21647547d6330471b3c9
 ARC9.LoadAttachment(ATT, "eft_m590_hg_moe")
 
@@ -127,6 +142,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m590_rs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.022,
+}))
+
 
 -- EFT ID: 5e87114fe2db31558c75a120
 ARC9.LoadAttachment(ATT, "eft_m590_rs_ghost")
@@ -145,6 +165,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m590_fs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.02,
+}))
+
+
 -- EFT ID: 5e8708d4ae379e67d22e0102
 ARC9.LoadAttachment(ATT, "eft_m590_fs_ghost")
 
@@ -157,9 +182,6 @@ ATT.CompactName = "590 Tactical"
 ATT.Icon = Material("entities/eft_m590_attachments/mossberg_590a1_tactical_rail.png", "mips smooth")
 ATT.Description = "A Weaver/Picatinny rail mount for Mossberg 590A1 pump-action shotguns."
 
-ATT.EFTErgoAdd = -2
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -223,6 +245,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2,
+    weight = 0.45,
+}))
+
+
 -- EFT ID: 5eeb2ff5ea4f8b73c827350b
 ARC9.LoadAttachment(ATT, "eft_m590_mount_tac")
 
@@ -236,9 +265,6 @@ ATT.CompactName = "Magpul SGA"
 ATT.Icon = Material("entities/eft_m590_attachments/mossberg_590a1_magpul_sga_stock.png", "mips smooth")
 ATT.Description = "An ergonomic polymer stock for the Mossberg 590A1 shotgun with a rubber butt-plate, manufactured by Magpul."
 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.71
-ATT.VisualRecoilMult = 0.71
 
 ATT.HasGrip = true
 
@@ -246,6 +272,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m590_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -29,
+    weight = 0.68,
+}))
+
 
 -- EFT ID: 5eea217fc64c5d0dfc05712a
 ARC9.LoadAttachment(ATT, "eft_m590_stock_sga")
@@ -259,9 +292,6 @@ ATT.CompactName = "590 stock"
 ATT.Icon = Material("entities/eft_m590_attachments/mossberg_590a1_polymer_stock.png", "mips smooth")
 ATT.Description = "A classical-looking polymer stock for Mossberg 590A1 shotguns with a rubber butt-plate."
 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.77
-ATT.VisualRecoilMult = 0.77
 
 ATT.HasGrip = true
 
@@ -269,6 +299,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m590_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -23,
+    weight = 0.64,
+}))
+
 
 -- EFT ID: 5e87116b81c4ed43e83cefdd
 ARC9.LoadAttachment(ATT, "eft_m590_stock_std")
@@ -282,7 +319,6 @@ ATT.CompactName = "Mesa LEO"
 ATT.Icon = Material("entities/eft_m590_attachments/mossberg_590a1_mesa_tactical_leo_gen1_stock_adapter.png", "mips smooth")
 ATT.Description = "Mesa Tactical’s Telescoping Stock Conversion Kit replaces the standard buttstock with an adapter that accepts AR style collapsible stocks and pistol grips."
 
-ATT.EFTErgoAdd = 10
 
 -- ATT.HasGrip = true 
 
@@ -312,6 +348,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.35,
+}))
+
+
 -- EFT ID: 5ef1b9f0c64c5d0dfc0571a1
 ARC9.LoadAttachment(ATT, "eft_m590_stock_leo")
 
@@ -324,7 +366,6 @@ ATT.CompactName = "590 cap"
 ATT.Icon = Material("entities/eft_m590_attachments/mossberg_590a1_12ga_8shell_magazine_cap.png", "mips smooth")
 ATT.Description = "An 8-shell capacity magazine cap for Mossberg 590A1 12ga shells."
 
-ATT.EFTErgoAdd = -2
 
 ATT.SortOrder = 8
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -336,7 +377,13 @@ ATT.HasMag = true
 ATT.ClipSize = 8
 ATT.ChamberSize = 1
 
-ATT.MalfunctionMeanShotsToFailMult = 0.99
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.01,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 5e87080c81c4ed43e83cefda
 ARC9.LoadAttachment(ATT, "eft_m590_mag_8")

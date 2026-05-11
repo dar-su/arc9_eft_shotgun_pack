@@ -22,23 +22,25 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_56.printname")
 
-ATT.DamageMax = 26 * mult2070
-ATT.DamageMin = 14 * mult2070
-ATT.PhysBulletMuzzleVelocity = 340 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrange_sg
-
-ATT.Penetration =      1 *2.54/100/0.0254
-ATT.PenetrationDelta = 12/100
-ATT.ArmorPiercing =    12/100
-ATT.RicochetChance =   0
-
 ATT.Num = 8
-ATT.VisualRecoilMult = 1.1
-ATT.SpreadMult = 1.1
-
 
 ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.028,
+    damage = 26,
+    ballisticCoeficient = 0.029,
+    initialSpeed = 340,
+    accuracyModifier = -0.1,
+    recoilModifier = 0.1,
+    penetrationPower = 1,
+    armorDamage = 12,
+    penetrationChance = 0.02,
+    heatFactor = 1.816,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.266,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e695fa4b936359b35d852
@@ -61,23 +63,25 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_62.printname")
 
-ATT.DamageMax = 22 * mult2070
-ATT.DamageMin = 12 * mult2070
-ATT.PhysBulletMuzzleVelocity = 410 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrange_sg
-
-ATT.Penetration =      2 *2.54/100/0.0254
-ATT.PenetrationDelta = 13/100
-ATT.ArmorPiercing =    13/100
-ATT.RicochetChance =   0/100
 
 ATT.Num = 8
--- ATT.VisualRecoilMult = 1.05
--- ATT.SpreadMult = 0.07
 
 
 ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.032,
+    damage = 22,
+    ballisticCoeficient = 0.03,
+    initialSpeed = 410,
+    penetrationPower = 2,
+    armorDamage = 13,
+    penetrationChance = 0.02,
+    heatFactor = 1.8387,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.252,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e69b9a4b9361bc8618958
@@ -100,23 +104,24 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_73.printname")
 
-ATT.DamageMax = 23 * mult2070
-ATT.DamageMin = 12.5 * mult2070
-ATT.PhysBulletMuzzleVelocity = 475 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrange_sg
-
-ATT.Penetration =      3 *2.54/100/0.0254
-ATT.PenetrationDelta = 13/100
-ATT.ArmorPiercing =    13/100
-ATT.RicochetChance =   0/100
-
 ATT.Num = 9
-ATT.VisualRecoilMult = 1.15
--- ATT.SpreadMult = 0.07
-
 
 ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.032,
+    damage = 23,
+    ballisticCoeficient = 0.034,
+    initialSpeed = 475,
+    recoilModifier = 0.15,
+    penetrationPower = 3,
+    armorDamage = 13,
+    penetrationChance = 0.02,
+    heatFactor = 1.9522,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.238,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e69c7a4b9360b6c0d54e4
@@ -139,23 +144,25 @@ ATT.HasAmmoooooooo = true
 
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_75.printname")
 
-ATT.DamageMax = 25 * mult2070
-ATT.DamageMin = 14 * mult2070
-ATT.PhysBulletMuzzleVelocity = 430 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 100 /0.0254 * dmgrange_sg
-
-ATT.Penetration =      3 *2.54/100/0.0254
-ATT.PenetrationDelta = 14/100
-ATT.ArmorPiercing =    14/100
-ATT.RicochetChance =   0/100
 
 ATT.Num = 8
--- ATT.VisualRecoilMult = 1.05
--- ATT.SpreadMult = 0.07
 
 
 ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.04,
+    damage = 25,
+    ballisticCoeficient = 0.057,
+    initialSpeed = 430,
+    penetrationPower = 3,
+    armorDamage = 14,
+    penetrationChance = 0.02,
+    heatFactor = 1.9295,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.266,
+}), "shotgun")
 
 
 -- EFT ID: 5a38ebd9c4a282000d722a5b
@@ -179,23 +186,29 @@ ATT.HasAmmoooooooo = true
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_devastator.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70bh.mdl"
 
-ATT.DamageMax = 198 * mult2070
-ATT.DamageMin = 110 * mult2070
-ATT.PhysBulletMuzzleVelocity = 415 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      5 *2.54/100/0.0254
-ATT.PenetrationDelta = 13/100
-ATT.ArmorPiercing =    13/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
-ATT.VisualRecoilMult = 1.3
-ATT.SpreadMult = 0.075
 
 
 ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.029,
+    damage = 198,
+    ballisticCoeficient = 0.032,
+    initialSpeed = 405,
+    accuracyModifier = 1.25,
+    recoilModifier = 0.3,
+    penetrationPower = 5,
+    armorDamage = 13,
+    penetrationChance = 0.05,
+    ricochetChance = 0.1,
+    heatFactor = 2.043,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.224,
+    lightBleedModifier = 0.2,
+    heavyBleedModifier = 0.3,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6a5fa4b93614ec501745
@@ -362,23 +375,26 @@ ATT.HasAmmoooooooo = true
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_poleva3.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70p3.mdl"
 
-ATT.DamageMax = 120 * mult2070
-ATT.DamageMin = 80 * mult2070
-ATT.PhysBulletMuzzleVelocity = 425 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      14 *2.54/100/0.0254
-ATT.PenetrationDelta = 35/100
-ATT.ArmorPiercing =    35/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
-ATT.VisualRecoilMult = 0.85
-ATT.SpreadMult = 0.11
-
 
 ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.029,
+    damage = 120,
+    ballisticCoeficient = 0.156,
+    initialSpeed = 425,
+    accuracyModifier = 1.1,
+    recoilModifier = -0.15,
+    penetrationPower = 14,
+    armorDamage = 35,
+    penetrationChance = 0.15,
+    ricochetChance = 0.1,
+    heatFactor = 2.0657,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.266,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6a53a4b9361bd473feec
@@ -402,23 +418,29 @@ ATT.HasAmmoooooooo = true
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_poleva6u.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70p6u.mdl"
 
-ATT.DamageMax = 135 * mult2070
-ATT.DamageMin = 89 * mult2070
-ATT.PhysBulletMuzzleVelocity = 445 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      17 *2.54/100/0.0254
-ATT.PenetrationDelta = 40/100
-ATT.ArmorPiercing =    40/100
-ATT.RicochetChance =   10/100
 
 ATT.Num = 1
-ATT.VisualRecoilMult = 0.9
-ATT.SpreadMult = 0.11
 
 
 ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.032,
+    damage = 135,
+    ballisticCoeficient = 0.144,
+    initialSpeed = 445,
+    accuracyModifier = 1.1,
+    recoilModifier = -0.1,
+    penetrationPower = 17,
+    armorDamage = 40,
+    penetrationChance = 0.2,
+    ricochetChance = 0.1,
+    heatFactor = 2.2473,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.224,
+    heavyBleedModifier = 0.1,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6a42a4b9364f07165f52
@@ -442,23 +464,28 @@ ATT.HasAmmoooooooo = true
 ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_star.printname")
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70star.mdl"
 
-ATT.DamageMax = 154 * mult2070
-ATT.DamageMin = 97 * mult2070
-ATT.PhysBulletMuzzleVelocity = 415 /0.0254
-ATT.RangeMin = 10
-ATT.RangeMax = 1000 /0.0254 * dmgrange
-
-ATT.Penetration =      16 *2.54/100/0.0254
-ATT.PenetrationDelta = 72/100
-ATT.ArmorPiercing =    72/100
-ATT.RicochetChance =   10/100
-
 ATT.Num = 1
-ATT.VisualRecoilMult = 1.05
-ATT.SpreadMult = 0.07
 
 
 ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.034,
+    damage = 154,
+    ballisticCoeficient = 0.121,
+    initialSpeed = 415,
+    accuracyModifier = 1.3,
+    recoilModifier = 0.05,
+    penetrationPower = 16,
+    armorDamage = 42,
+    penetrationChance = 0.17,
+    ricochetChance = 0.1,
+    heatFactor = 2.27,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.196,
+    heavyBleedModifier = 0.3,
+}), "shotgun")
 
 
 -- EFT ID: 5d6e6a05a4b93618084f58d0
@@ -489,13 +516,18 @@ ATT.Description = [[The TOZ 002 pistol grip for the TOZ-106 bolt-action shotgun.
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 3
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_toz106_pgrip"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5a38eecdc4a282329a73b512
@@ -516,13 +548,19 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
-ATT.EFTErgoAdd = 2
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 2
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_toz106_2.mdl"
 ATT.Category = {"eft_toz106_mag"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.095,
+    malfunctionChance = 0.033,
+}))
 
 
 -- EFT ID: 5a38ee51c4a282000c5a955c
@@ -542,13 +580,19 @@ ATT.Description = [[A 4-shot 20ga magazine for the MTs 20-01 and TOZ-106 hunting
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 4
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_toz106_4.mdl"
 ATT.Category = {"eft_toz106_mag"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.11,
+    malfunctionChance = 0.052,
+}))
 
 
 -- EFT ID: 5a38ed75c4a28232996e40c6
@@ -568,13 +612,19 @@ ATT.Description = [[A 5-shot 20ga magazine for MTs 20-01 and TOZ-106 hunting sho
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 5
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_toz106_5.mdl"
 ATT.Category = {"eft_toz106_mag"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.13,
+    malfunctionChance = 0.06,
+}))
 
 
 -- EFT ID: 5c6161fb2e221600113fbde5
@@ -605,6 +655,11 @@ ATT.Category = {"eft_toz106_mount"}
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 5c6162682e22160010261a2b
 ARC9.LoadAttachment(ATT, "eft_mount_toz106_mountdove")
 
@@ -633,6 +688,11 @@ ATT.Category = {"eft_toz106_mount2"}
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 5c61627a2e22160012542c55
 ARC9.LoadAttachment(ATT, "eft_mount_toz106_mountrail")
 
@@ -651,10 +711,7 @@ ATT.HasStock = true
 ATT.HasGrip = true
 ATT.HasReciever = true
 
-ATT.EFTErgoAdd = 6
 
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -666,6 +723,13 @@ ATT.ModelOffset = Vector(0.0, 6.5, 0)
 
 ATT.Category = {"eft_toz106_stock"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -27,
+    weight = 1.25,
+}))
 
 
 -- EFT ID: 5adf23995acfc400185c2aeb
@@ -682,13 +746,18 @@ ATT.CompactName = "GPCP"
 ATT.Icon = Material("entities/eft_toz106_attachments/gpcp.png", "mips smooth")
 ATT.Description = [[A stripped-down version of the FAB Defense GPCP cheek pad for the TOZ-106 folding stock.]]
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_toz106_gpcp"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.155,
+}))
 
 
 -- EFT ID: 626a8ae89e664a2e2a75f409
@@ -709,10 +778,7 @@ ATT.HasStock = true
 ATT.HasGrip = true
 ATT.HasReciever = true
 
-ATT.EFTErgoAdd = 9
 
-ATT.RecoilMult = 0.58
-ATT.VisualRecoilMult = 0.58
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -723,6 +789,13 @@ ATT.ModelAngleOffset = Angle(90, -90, 90)
 ATT.ModelOffset = Vector(0.0, 6.5, 0)
 ATT.Category = {"eft_toz106_stock"}
 
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    recoilModifier = -29,
+    weight = 1.29,
+}))
 
 
 -- EFT ID: 5c99f3592e221644fc633070
@@ -744,11 +817,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasReciever = true
 
-ATT.EFTErgoAdd = 7
 
--- ATT.RecoilMult = 0.62
--- ATT.VisualRecoilMult = 0.62
-
+-- -- 
 ATT.Category = {"eft_toz106_stock"}
 ATT.ActivateElements = {"unfolded"}
 ATT.Attachments = {
@@ -768,8 +838,8 @@ ATT.Attachments = {
 ATT.ToggleStats = {
     {
         PrintName = "eft_toggle_unfolded",
-        RecoilMult = 0.62,
-        VisualRecoilMult = 0.62,
+        RecoilMult = 0.76,
+        VisualRecoilMult = 0.76,
         HasStock = true
     },
     {
@@ -778,6 +848,12 @@ ATT.ToggleStats = {
         ActivateElements = {"folded"}
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    weight = 1.25,
+}))
 
 
 -- EFT ID: 5a38ef1fc4a282000b1521f6
