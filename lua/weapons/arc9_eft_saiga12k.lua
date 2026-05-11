@@ -143,7 +143,7 @@ SWEP.Num = 8
 
 ------------------------- |||           Malfunctions            ||| -------------------------
 
-SWEP.MalfunctionMeanShotsToFail = 240
+SWEP.MalfunctionMeanShotsToFail = 240 * 1.5
 SWEP.MalfunctionMeanShotsToFailMultHot = 0.3
 SWEP.HeatCapacity = 40
 SWEP.HeatDissipation = 1.2

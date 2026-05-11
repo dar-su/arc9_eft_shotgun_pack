@@ -145,7 +145,7 @@ SWEP.Num = 8
 ------------------------- |||           Malfunctions            ||| -------------------------
 
 SWEP.MalfunctionCycle = true
-SWEP.MalfunctionMeanShotsToFail = 30
+SWEP.MalfunctionMeanShotsToFail = 30 * 1.5
 -- SWEP.MalfunctionMeanShotsToFailMultHot = -1
 -- SWEP.MalfunctionWait = -1 -- oh god why the fuck 0 is 0.5???????
 SWEP.HeatCapacity = 90

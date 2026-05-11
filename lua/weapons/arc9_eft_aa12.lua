@@ -151,7 +151,7 @@ SWEP.Num = 8
 
 SWEP.Malfunction = false -- !!
 SWEP.MalfunctionNeverLastShoot = false 
-SWEP.MalfunctionMeanShotsToFail = 870
+SWEP.MalfunctionMeanShotsToFail = 870 * 1.5
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.HeatCapacity = 240
 SWEP.HeatDissipation = 2.5
