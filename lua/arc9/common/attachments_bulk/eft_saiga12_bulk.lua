@@ -26,6 +26,59 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 57616c112459773cce774d66
 ARC9.LoadAttachment(ATT, "eft_saiga12_dustcover_std")
 
+///////////////////////////////////////      eft_saiga12_dustcover_zombie
+
+
+ATT = {}
+
+ATT.PrintName = "SOK-12 Kiba Arms Zombie Custom dust cover"
+ATT.CompactName = "SOK-12 ZC"
+ATT.Icon = Material("entities/eft_attachments/676017fe8cfeeba9f707c8d6.png", "mips smooth")
+ATT.Description = [[A receiver dust cover for the SOK-12 shotgun, modernized by Kiba Arms.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_saiga12_dustcover"}
+
+ATT.SubMaterial3 = "models/weapons/arc9/darsu_eft/mods/reciever_saiga12_izhmash_fa_zombie_custom_LOD0"
+ATT.ActivateElements = {"eft_saiga12_dustcover_std"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.12,
+}))
+
+
+-- EFT ID: 676017fe8cfeeba9f707c8d6
+ARC9.LoadAttachment(ATT, "eft_saiga12_dustcover_zombie")
+
+///////////////////////////////////////      eft_saiga12_dustcover_redline
+
+
+ATT = {}
+
+ATT.PrintName = "SOK-12 dust cover (Redline)"
+ATT.CompactName = "SOK-12 RL"
+ATT.Icon = Material("entities/eft_attachments/676017fe8cfeeba9f707c8d6.png", "mips smooth")
+ATT.Description = [[A receiver dust cover for the SOK-12 shotgun. Custom version for the Arena champion JP's shotgun.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_saiga12_dustcover"}
+
+ATT.SubMaterial3 = "models/weapons/arc9/darsu_eft/mods/reciever_saiga12_izhmash_champ_LOD0"
+ATT.ActivateElements = {"eft_saiga12_dustcover_std"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.12,
+}))
+
+
+-- EFT ID: 6981f9c5f819a41431029304
+ARC9.LoadAttachment(ATT, "eft_saiga12_dustcover_redline")
+
 
 ///////////////////////////////////////      eft_saiga12_handguard_bravo18
 

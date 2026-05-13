@@ -45,7 +45,7 @@ SWEP.Attachments = {
         Installed = false,
     },
     {
-        Installed = "eft_saiga12_dustcover_std",
+        Installed = "eft_saiga12_dustcover_zombie",
     },
     _,
     {
