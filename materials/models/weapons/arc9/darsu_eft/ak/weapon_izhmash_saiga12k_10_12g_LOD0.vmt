@@ -20,21 +20,37 @@
 	"$envmaptint" "[0.05 0.05 0.05]"
 	"$color2" "[0.88 0.88 0.88]"
 
-	"$detail" "models/weapons/arc9/darsu_eft/ak/saiga12_heat"
-    "$detailscale" "1"
-	"$detailblendfactor" "0"
-    "$detailblendmode" "5"
+    "$detailblendmode" "4"
+    "$detailblendfactor" "0.5"
+    "$detailscale" "1.0"
 
-	"Proxies"
-     {
+    "$detailangle" 0.0
+    "$attname" ""
+
+    "Proxies"
+    {
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.05"
+            "max" "0.025"
         }
-        "ARC9_Heat" {
-			blend $detailblendfactor
+        
+        "Arc9CustomCamoAdvanced" 
+        {
+            "camoTexture" $detail
+            "camoScale" $detailscale
+            "camoAngle" $detailangle
+            "camoBlendMode" $detailblendmode
+            "camoBlendFactor" $detailblendfactor
+            "phonk" $phongboost
+            "color" "[0.99 0.99 0.99]"
         }
-     }
+
+        "TextureTransform"
+        {
+            "rotateVar" "$detailangle"
+            "resultVar" "$detailtexturetransform"
+        }
+    }
 }

@@ -2411,3 +2411,107 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 619d36da53b4d42ee724fae4
 ARC9.LoadAttachment(ATT, "eft_mts255_muzzle_std")
+
+
+
+
+
+///////////////////////////////////////      eft_mr155_barrel_660
+
+ATT = {}
+ATT.PrintName = "MP-155 12ga 660mm barrel"
+ATT.CompactName = "MP155 660mm"
+ATT.Icon = Material("entities/eft_attachments/68540a07961c6f351f04d917.png", "mips smooth")
+ATT.Description = "A standard serially produced 660mm barrel with built-in iron sights for MP-155 12 gauge shotguns."
+
+ATT.HeatCapacityMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 1.054
+
+ATT.HasBarrel = true 
+ATT.BarrelLengthAdd = 8
+
+ATT.Spread = 17.88 * ARC9.MOAToAcc
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_mr155_barrel"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_12ga_muzzle",
+        Pos = Vector(-23.82, 0.01, 0.15),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 16, -0.88),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    recoilModifier = -7,
+    weight = 0.8,
+    velocity = 12.8,
+}))
+-- EFT ID: 68540a07961c6f351f04d917
+ARC9.LoadAttachment(ATT, "eft_mr155_barrel_660")
+
+///////////////////////////////////////      eft_mr155_barrel_750
+
+ATT = {}
+ATT.PrintName = "MP-155 12ga 750mm barrel"
+ATT.CompactName = "MP155 750mm"
+ATT.Icon = Material("entities/eft_attachments/68540a100103119fd00e115a.png", "mips smooth")
+ATT.Description = "A standard serially produced 750mm barrel with a vent rib for MP-155 12 gauge shotguns."
+
+ATT.HeatCapacityMult = 0.92
+ATT.PhysBulletMuzzleVelocityMult = 1.054
+
+ATT.HasBarrel = true 
+ATT.BarrelLengthAdd = 10
+
+ATT.Spread = 15.13 * ARC9.MOAToAcc
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_mr155_barrel"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_12ga_muzzle",
+        Pos = Vector(-27.55, 0.01, 0.15),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 16, -0.9),
+        Ang = Angle(0, -0.3, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 53,
+        IsIronSight = true
+    }
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -9,
+    weight = 0.8,
+    velocity = 15.6,
+}))
+-- EFT ID: 68540a100103119fd00e115a
+ARC9.LoadAttachment(ATT, "eft_mr155_barrel_750")

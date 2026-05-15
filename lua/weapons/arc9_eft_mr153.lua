@@ -633,7 +633,10 @@ SWEP.AttachmentElements = {
     ["eft_mr153_barrel_660"] = { Bodygroups = { {1, 2} } },
     ["eft_mr153_barrel_710"] = { Bodygroups = { {1, 3} } },
     ["eft_mr153_barrel_750"] = { Bodygroups = { {1, 4} } },
+
     ["eft_mr155_barrel_510"] = { Bodygroups = { {1, 1} } },
+    ["eft_mr155_barrel_660"] = { Bodygroups = { {1, 2} } },
+    ["eft_mr155_barrel_750"] = { Bodygroups = { {1, 3} } },
 
     ["eft_mr153_hg_std"] = { Bodygroups = { {2, 1} } },
     ["eft_mr155_hg_std"] = { Bodygroups = { {2, 1} } },

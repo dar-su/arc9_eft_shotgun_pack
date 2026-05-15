@@ -707,6 +707,7 @@ SWEP.AttachmentElements = {
     ["eft_ammo_20x70_poleva3"] = { Bodygroups = { {7, 2} } },
     ["eft_ammo_20x70_poleva6u"] = { Bodygroups = { {7, 3} } },
     ["eft_ammo_20x70_star"] = { Bodygroups = { {7, 4} } },
+    ["eft_ammo_20x70_tss"] = { Bodygroups = { {7, 3} } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)

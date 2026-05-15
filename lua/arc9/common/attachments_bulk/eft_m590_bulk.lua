@@ -387,3 +387,37 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 5e87080c81c4ed43e83cefda
 ARC9.LoadAttachment(ATT, "eft_m590_mag_8")
+
+
+
+///////////////////////////////////////      eft_m590_rs_mount
+
+ATT = {}
+
+ATT.PrintName = "M590 Precision Reflex Scope Mount"
+ATT.CompactName = "PRI M590"
+ATT.Icon = Material("entities/eft_attachments/68badf5030572e90770cd688.png", "mips smooth")
+ATT.Description = "A Weaver rail for the Mossberg 590 shotgun, installed on the receiver. Manufactured by Precision Reflex."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m590_rs"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0, 0, -0.24),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0.75),
+    },
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.1,
+    ergonomicsModifier = -0.5,
+}))
+
+-- EFT ID: 68badf5030572e90770cd688
+ARC9.LoadAttachment(ATT, "eft_m590_rs_mount")

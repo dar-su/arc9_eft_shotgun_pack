@@ -543,6 +543,7 @@ SWEP.AttachmentElements = {
     ["eft_m870_mag_10"] = { Bodygroups = { {5, 3} } },
     
     ["eft_m870_mount_clamp"] = { Bodygroups = { {6, 1} } },
+    ["eft_m870_mount_toni"] = { Bodygroups = { {6, 2} } },
     ["eft_m870_mount_xs"] = { Bodygroups = { {7, 1} } },
     ["eft_m870_mount_utg"] = { Bodygroups = { {7, 2} } },
 

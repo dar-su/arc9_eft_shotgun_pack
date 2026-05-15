@@ -714,7 +714,8 @@ SWEP.EFTRequiredAtts = { "HasMag", "HasBolt", "HasGrip", "HasHG", "HasBarrel", "
 SWEP.AttachmentElements = {
     ["eft_m3s90_barrel_std"] = { Bodygroups = { {1, 1} } },
     ["eft_m3s90_hg_std"] = { Bodygroups = { {2, 1} } },
-    ["eft_m3s90_stock_unfolded"] = { Bodygroups = { {3, 1} } },
+    ["eft_m3s90_stock"] = { Bodygroups = { {3, 1} } },
+    -- ["eft_m3s90_stock_unfolded"] = { Bodygroups = { {3, 1} } },
     ["eft_m3s90_stock_folded"] = { Bodygroups = { {3, 2} } },
     ["eft_m3s90_stock_urba"] = { Bodygroups = { {3, 3} } },
     ["eft_m3s90_pg_std"] = { Bodygroups = { {4, 1} } },
@@ -744,8 +745,18 @@ SWEP.AttachmentElements = {
     ["eft_ammo_12x70_superformance"] = { Bodygroups = { {10, 12} } },
     ["eft_ammo_12x70_slug"] = { Bodygroups = { {10, 13} } },
     ["eft_ammo_12x70_mixed_50bmg_p3"] = { Bodygroups = { {10, 14} } },
+
+    ["eft_m870_mount_clamp"] = { Bodygroups = { {11, 1} } },
+    ["eft_m870_mount_toni"] = { Bodygroups = { {11, 2} } },
 }
 
+SWEP.Hook_ModifyBodygroups = function(swep, data)
+    local els = data.elements
+
+    if els["eft_m3s90_stock_folded"] then
+        data.model:SetBodygroup(3, 2)
+    end
+end
 
 SWEP.Attachments = {
     {

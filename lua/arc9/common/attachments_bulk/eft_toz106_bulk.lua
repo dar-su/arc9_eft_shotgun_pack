@@ -491,6 +491,122 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 5d6e6a05a4b93618084f58d0
 ARC9.LoadAttachment(ATT, "eft_ammo_20x70_star")
 
+///////////////////////////////////////      eft_ammo_20x70_tss
+
+
+ATT = {}
+
+ATT.PrintName = "20/70 TSS Armor Piercing Slug"
+ATT.CompactName = "TSS AP"
+ATT.Icon = Material("entities/eft_attachments/660137d8481cc6907a0c5cda.png", "mips smooth")
+ATT.Description = "An armor-piercing slug for 20/70 caliber shotguns. Combines decent accuracy with increased penetration. Excellent choice if the target needs to be eliminated, not just intimidated. "
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasAmmoooooooo = true 
+
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_tss.printname")
+ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70p6u.mdl"
+
+ATT.Num = 1
+
+ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.04,
+    damage = 155,
+    ballisticCoeficient = 0.032,
+    initialSpeed = 482,
+    accuracyModifier = 0.64,
+    recoilModifier = 0.48,
+    penetrationPower = 30,
+    armorDamage = 54,
+    ricochetChance = 0.18,
+    heatFactor = 2.4371,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.224,
+    lightBleedModifier = 0.2,
+    heavyBleedModifier = 0.3,
+}))
+-- EFT ID: 660137d8481cc6907a0c5cda
+ARC9.LoadAttachment(ATT, "eft_ammo_20x70_tss")
+
+///////////////////////////////////////      eft_ammo_20x70_game
+
+
+ATT = {}
+
+ATT.PrintName = "20/70 Dangerous Game Slug"
+ATT.CompactName = "DGS"
+ATT.Icon = Material("entities/eft_attachments/660137ef76c1b56143052be8.png", "mips smooth")
+ATT.Description = "A slug cartridge for 20/70 caliber shotguns. Loses very little velocity over distance, so it is suitable for reliable target engagement at a long range. "
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasAmmoooooooo = true 
+
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_game.printname")
+ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70star.mdl"
+
+ATT.Num = 1
+
+ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.038,
+    damage = 143,
+    ballisticCoeficient = 0.032,
+    initialSpeed = 476,
+    accuracyModifier = 0.6,
+    recoilModifier = 0.4,
+    penetrationPower = 25,
+    armorDamage = 47,
+    ricochetChance = 0.15,
+    heatFactor = 2.3416,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.224,
+    lightBleedModifier = 0.2,
+    heavyBleedModifier = 0.3,
+}))
+-- EFT ID: 660137ef76c1b56143052be8
+ARC9.LoadAttachment(ATT, "eft_ammo_20x70_game")
+
+///////////////////////////////////////      eft_ammo_20x70_flechette
+
+
+ATT = {}
+
+ATT.PrintName = "20/70 flechette"
+ATT.CompactName = "Flechette"
+ATT.Icon = Material("entities/eft_attachments/6601380580e77cfd080e3418.png", "mips smooth")
+ATT.Description = "A shell loaded with razor-sharp flechettes for 20ga shotguns. Far from being the most effective round, but believe us - you definitely don't want to be on the receiving end of the weapon loaded with it. "
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasAmmoooooooo = true 
+
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_20x70_flechette.printname")
+ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/20x70star.mdl"
+
+ATT.Num = 8
+
+ATT.Category = {"eft_ammo_20x70"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.035,
+    damage = 20,
+    ballisticCoeficient = 0.057,
+    initialSpeed = 400,
+    accuracyModifier = -0.1,
+    penetrationPower = 24,
+    armorDamage = 24,
+    heatFactor = 2.1349,
+    failureToFeedChance = 0.01,
+    misfireChance = 0.266,
+}))
+-- EFT ID: 6601380580e77cfd080e3418
+ARC9.LoadAttachment(ATT, "eft_ammo_20x70_flechette")
+
 
 
 

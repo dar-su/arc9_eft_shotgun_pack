@@ -22,6 +22,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.12,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 57616c112459773cce774d66
 ARC9.LoadAttachment(ATT, "eft_saiga12_dustcover_std")
@@ -40,7 +41,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_dustcover"}
 
-ATT.SubMaterial3 = "models/weapons/arc9/darsu_eft/mods/reciever_saiga12_izhmash_fa_zombie_custom_LOD0"
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/reciever_saiga12_izhmash_fa_zombie_custom_LOD0"
 ATT.ActivateElements = {"eft_saiga12_dustcover_std"}
 
 
@@ -49,6 +50,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.12,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 676017fe8cfeeba9f707c8d6
 ARC9.LoadAttachment(ATT, "eft_saiga12_dustcover_zombie")
@@ -67,7 +69,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_saiga12_dustcover"}
 
-ATT.SubMaterial3 = "models/weapons/arc9/darsu_eft/mods/reciever_saiga12_izhmash_champ_LOD0"
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/reciever_saiga12_izhmash_champ_LOD0"
 ATT.ActivateElements = {"eft_saiga12_dustcover_std"}
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -75,6 +77,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.12,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 6981f9c5f819a41431029304
 ARC9.LoadAttachment(ATT, "eft_saiga12_dustcover_redline")
@@ -990,3 +993,103 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 674fe8f6f34d761ab8020cc8
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_md20")
+
+
+
+
+///////////////////////////////////////      eft_saiga12_handguard_customrl
+
+
+ATT = {}
+
+ATT.PrintName = "Saiga-12 Custom Guns Hedon S handguard (Redline)"
+ATT.CompactName = "Hedon S"
+ATT.Icon = Material("entities/eft_attachments/hedons.png", "mips smooth")
+ATT.Description = "A lightweight aluminum handguard by Custom Guns, designed for installation on Saiga-12 shotguns. Equipped with a KeyMod interface for mounting rails and additional equipment. A special version made for the Arena champion JP's shotgun."
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasHG = true 
+ATT.Category = {"eft_saiga12_handguard"}
+
+ATT.HeatCapacityMult = 1.021
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_saiga12_custom_guns_hedon_s.mdl"
+ATT.ModelAngleOffset = Angle(0, -90, 0)
+-- ATT.LHIK = true
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_keymod_b"),
+        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4", "eft_mount_keymod_bipod"},
+        Pos = Vector(0, 12.5, 1.5),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_keymod_l"),
+        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4"},
+        Pos = Vector(-0.99, 12.5, 0.52),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_keymod_r"),
+        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4"},
+        Pos = Vector(0.99, 12.5, 0.52),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_keymod_b"),
+        Category = {"eft_mount_keymod6"},
+        Pos = Vector(0, 4.3, 1.5),
+        Ang = Angle(0, -90, -90),   
+    },
+}
+
+
+ATT.AdvancedCamoSupport = true
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 22,
+    weight = 0.25,
+}))
+-- EFT ID: 6981f97f1d2e2070560b7277
+ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_customrl")
+
+
+///////////////////////////////////////      eft_saiga12_redline
+
+
+ATT = {}
+
+ATT.PrintName = "Saiga-12K 12ga (Redline)"
+ATT.CompactName = "Redline"
+ATT.Icon = Material("entities/eft_attachments/redline.png", "mips smooth")
+ATT.Description = [[A modified Saiga-12K smoothbore shotgun specially customized for the Arena champion known by the name JP. The custom build reduces barrel overheating during sustained fire and improves overall weapon reliability. ]]
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_custom_slot_saiga12kfa"}
+
+ATT.HeatCapacityMult = 1.4
+ATT.MalfunctionMeanShotsToFailMult = 1.4
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+}))
+
+ATT.Max = 1
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
+        Pos = Vector(0, 0, 1),
+        Ang = Angle(0, 0, 0),
+        Category = {"eft_custom_slot_saiga12k", "eft_custom_slot"},
+    },
+}
+
+-- EFT ID: NO
+ARC9.LoadAttachment(ATT, "eft_saiga12_redline")

@@ -438,6 +438,47 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 5a789261c5856700186c65d3
 ARC9.LoadAttachment(ATT, "eft_m870_mount_clamp")
 
+///////////////////////////////////////      eft_m870_mount_toni
+
+ATT = {}
+
+ATT.PrintName = "Toni System Tactical Barrel Clamp"
+ATT.CompactName = "TS TBC"
+ATT.Icon = Material("entities/eft_attachments/676177b09cfcc4c25b027446.png", "mips smooth")
+ATT.Description = "The Tactical Barrel Clamp is designed for mounting on tubular magazines and barrels with a diameter of 20-27 millimeters. Features a rail for attaching additional equipment. Manufactured by Toni System."
+
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m870_clamp"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
+        Category = "eft_tactical",
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(-0.5, -0.93, -0.05),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
+        Category = "eft_tactical",
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(-0.5, 0.93, -0.05),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.118,
+}))
+-- EFT ID: 676177b09cfcc4c25b027446
+ARC9.LoadAttachment(ATT, "eft_m870_mount_toni")
+
 ///////////////////////////////////////      eft_m870_mount_xs
 
 ATT = {}
@@ -588,6 +629,14 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = {"eft_ar_stock", "eft_ar_stock_notbuffer"},
+        RejectAttachments = {
+            ["eft_ar_stock_ravage_blk"] = true,
+            ["eft_ar_stock_ravage_ylw"] = true,
+            ["eft_ar_stock_ravage_red"] = true,
+            ["eft_ar_stock_ums_blk"] = true,
+            ["eft_ar_stock_ums_red"] = true,
+            ["eft_ar_stock_ums_ylw"] = true,
+        },
         Pos = Vector(0, -3, 1.36),
         Ang = Angle(7, -90, 0),
         Icon_Offset = Vector(0, 0, 0),

@@ -164,12 +164,7 @@ SWEP.CustomizePosHook = function(wep, vec)
 	local eles = wep:GetElements()
 
 	-- Stocks
-	if eles["eft_stock_ak74m_std"] or eles["eft_stock_ak100_skelet"]
-	or eles["eft_ak12_stock_tube"] or eles["eft_stock_ak74m_caa_akts"] 
-	or eles["eft_stock_ak_skelet_cust"] or eles["eft_rpk16_stock_tube"] 
-	or eles["eft_saiga12_stock_std"] then vec = vec + Vector(-4, 6, 0)
-	elseif eles["eft_stock_zenit_pt1"] or eles["eft_stock_zenit_pt3"] then vec = vec + Vector(-3, 4.5, 0)
-	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 6, 0) end
+	if eles["eft_saiga12_stock"] or eles["eft_ak74m_stock"] then vec = vec + Vector(-3, 4.5, 0) end
 	
 	if eles["eft_ar_stock_prsgen3"] or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 3, 0) end
 
@@ -189,12 +184,7 @@ SWEP.CustomizeRotateAnchorHook = function(wep, vec)
 	local eles = wep:GetElements()
 
 	-- Stocks
-	if eles["eft_stock_ak74m_std"] or eles["eft_stock_ak100_skelet"]
-	or eles["eft_ak12_stock_tube"] or eles["eft_stock_ak74m_caa_akts"] 
-	or eles["eft_stock_ak_skelet_cust"] or eles["eft_rpk16_stock_tube"] 
-	or eles["eft_saiga12_stock_std"] then vec = vec + Vector(-4, 0, 0)
-	elseif eles["eft_stock_zenit_pt1"] or eles["eft_stock_zenit_pt3"] then vec = vec + Vector(-3, 0, 0)
-	elseif eles["eft_stock_ak_evo"] then vec = vec + Vector(-3, 0, 0) end
+	if eles["eft_saiga12_stock"] or eles["eft_ak74m_stock"] then vec = vec + Vector(-3, 0, 0) end
 	
 	if eles["eft_ar_stock_prsgen3"] or eles["eft_ar_stock_prsgen3g"] then vec = vec + Vector(-1.75, 0, 0) end
 
@@ -976,6 +966,8 @@ SWEP.AttachmentElements = {
     ["eft_saiga12_handguard_titanrecuver"] = { Bodygroups = { {9, 1} } },
     ["eft_saiga12_rs_chaos"] = { Bodygroups = { {10, 1} } },
     ["eft_saiga12_fs_chaos"] = { Bodygroups = { {11, 1} } },
+
+    ["eft_saiga12_redline"] = { Bodygroups = { {12, 1} }, Skin = 2 },
 }
 
 
@@ -1078,8 +1070,34 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_slot_ak", "eft_custom_slot_saiga12k"},
+        RejectAttachments = {["eft_extras_camos"] = true}, -- we have real camo support
         Bone = "mod_pistol_grip",
         Pos = Vector(0, -4, -2),
         Ang = Angle(0, 0, 0),
+    },
+
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo1"),
+        Category = {"universal_camo"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, 3, 0),
+        CosmeticOnly = true,
+        IsAdvancedCamo1 = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo2"),
+        Category = {"universal_camo"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, 1.5, 0),
+        CosmeticOnly = true,
+        IsAdvancedCamo2 = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo3"),
+        Category = {"universal_camo"},
+        Bone = "mod_pistol_grip",
+        Pos = Vector(0, 0, 0),
+        CosmeticOnly = true,
+        IsAdvancedCamo3 = true,
     },
 }

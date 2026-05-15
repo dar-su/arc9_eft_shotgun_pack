@@ -26,6 +26,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
     },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
+        Category = "eft_m870_clamp",
+        Pos = Vector(-15.5, 0, 0.65),
+        Ang = Angle(0, 0, 0),
+    },
 }
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
