@@ -25,7 +25,7 @@
     "$detailscale" "1.0"
 
     "$detailangle" 0.0
-    "$attname" ""
+    "$attname" "eft_saiga12_dustcover_redline"
 
     "Proxies"
     {

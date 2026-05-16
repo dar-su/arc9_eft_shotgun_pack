@@ -168,6 +168,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 16,
@@ -296,6 +297,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.18,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 576169e62459773c69055191
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_std")
@@ -514,6 +516,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     malfunctionChance = 0.05,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5a966f51a2750c00156aacf6
 ARC9.LoadAttachment(ATT, "eft_saiga12_magazine_promag")
@@ -541,6 +544,8 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_std.mdl"
 
 ATT.ActivateElements = {"mag5"}
+
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 5,
@@ -670,6 +675,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.35,
 }))
 
+ATT.AdvancedCamoSupport = "eft_stock_ak74m_std"
 
 -- EFT ID: 57616ca52459773c69055192
 ARC9.LoadAttachment(ATT, "eft_saiga12_stock_std")
@@ -802,6 +808,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.408,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 674fe57721a9aa6be6045b96
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titan")
@@ -857,6 +864,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.07,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 674fe89a4472d471fb0f07d8
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titantop")
@@ -900,6 +908,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.09,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 674fe8b9362ea1f88b0e278d
 ARC9.LoadAttachment(ATT, "eft_saiga12_handguard_titanrecuver")

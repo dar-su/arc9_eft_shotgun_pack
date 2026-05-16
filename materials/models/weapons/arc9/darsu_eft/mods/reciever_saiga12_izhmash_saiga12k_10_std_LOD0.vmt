@@ -21,8 +21,11 @@
     "$detailblendfactor" "0.5"
     "$detailscale" "1.0"
 
+	"$envmaptint" "[0.05 0.05 0.05]"
+    "$color2"           "[0.88 0.88 0.88]"
+
     "$detailangle" 0.0
-    "$attname" ""
+    "$attname" "eft_saiga12_dustcover_std"
 
     "Proxies"
     {
