@@ -339,6 +339,8 @@ ATT.ActivateElements = {"mag20"}
 
 ATT.HasMag = true
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 ATT.ClipSize = 20
 -- ATT.ChamberSize = 1
 ATT.BulletBones = {

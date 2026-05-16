@@ -471,6 +471,8 @@ ATT.EFTImprovedMagCheck = true
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_drum.mdl"
 
@@ -987,6 +989,8 @@ ATT.EFTImprovedMagCheck = true
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_saiga12_drummd20.mdl"
