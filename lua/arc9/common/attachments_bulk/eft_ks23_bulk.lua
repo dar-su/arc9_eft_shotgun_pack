@@ -232,7 +232,7 @@ ATT.Sights = {
     }
 }
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_komz_rusak_marks.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_komz_rusak_marks.png", "smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 450
 ATT.HoloSightColorable = false
@@ -292,7 +292,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 2.8,
     failureToFeedChance = 0.01,
     misfireChance = 0.175,
-}), "shotgun")
+}, "shotgun"))
 
 
 -- EFT ID: 5e85a9a6eacf8c039e4e2ac1
@@ -333,7 +333,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 2.975,
     failureToFeedChance = 0.01,
     misfireChance = 0.175,
-}), "shotgun")
+}, "shotgun"))
 
 
 -- EFT ID: 5f647f31b6238e5dd066e196
@@ -374,7 +374,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 3.325,
     failureToFeedChance = 0.01,
     misfireChance = 0.175,
-}), "shotgun")
+}, "shotgun"))
 
 
 -- EFT ID: 5e85aa1a988a8701445df1f5
