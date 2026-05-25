@@ -560,9 +560,11 @@ ATT.HasGrip = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/agr870_rhik.mdl"
--- ATT.LHIK = true
+-- ATT.Model = "models/weapons/arc9/darsu_eft/mods/agr870_rhik.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/m590_newrhik3.mdl"
+ATT.ModelOffset = Vector(4.27, -13.05, 2.77)
 ATT.RHIK = true
+ATT.ActivateElements = {"eft_grippose"}
 
 ATT.Category = {"eft_m870_stock", "eft_m870_stock_fabagr"}
 
@@ -751,10 +753,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m870_stock"}
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mesa870_rhik.mdl"
--- ATT.LHIK = true
-ATT.RHIK = true
+-- ATT.Model = "models/weapons/arc9/darsu_eft/mods/mesa870_rhik.mdl"
 
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/m590_newrhik3.mdl"
+ATT.ModelOffset = Vector(4.27, -13.05, 2.77)
+ATT.RHIK = true
+ATT.ActivateElements = {"eft_grippose"}
 
 ATT.Attachments = {
     {

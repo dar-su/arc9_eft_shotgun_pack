@@ -327,9 +327,10 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m590_stock"}
 
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mesa870_rhik.mdl"
--- ATT.LHIK = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/m590_newrhik3.mdl"
+ATT.ModelOffset = Vector(4.27, -12.25, 2.77)
 ATT.RHIK = true
+ATT.ActivateElements = {"eft_grippose"}
 
 ATT.Attachments = {
     {

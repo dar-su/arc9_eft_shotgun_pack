@@ -24,7 +24,7 @@ SWEP.StandardPresets = {
 }
 
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
-SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_m870.mdl"
+SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_m870_2.mdl"
 SWEP.DefaultBodygroups = "0000000000000"
 
 ------------------------- |||           Offsets            ||| -------------------------
@@ -226,32 +226,14 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             anim = (clip < 2 and "magcheck_empty" or "magcheck")
         elseif rand == 1 then
             anim = "look"
+            if swep:GetElements()["eft_grippose"] then anim = anim .. "_pg" end
         end
         
         return anim
     end
     
     if anim == "reload_start" then
-        if empty then
-            swep.startedinpouch = true
-            return "reload_start_empty"
-        end
-
-        return "reload_start2"
-    elseif anim == "reload_insert" then
-        if swep.startedinpouch then
-            swep.startedinpouch = nil 
-            return "reload_loop"
-        end
-
-        return "reload_loop2"
-    elseif anim == "reload_finish" then
-        if swep.startedinpouch then
-            swep.startedinpouch = nil 
-            return "reload_end"
-        end
-
-        return "reload_end2"
+        if empty then return "reload_start_empty" end
     elseif anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         if SERVER then
@@ -270,6 +252,25 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     -- return anim
 end
 
+SWEP.Hook_Think2 = function(self) -- forcing early reload exit to match anim
+    if self:GetReloading() then
+        local clip = self:Clip1()
+        local ammo = self:Ammo1()
+        local capacity = self:GetProcessedValue("ClipSize") + self:GetProcessedValue("ChamberSize")
+
+        if clip >= capacity or ammo == 0 or (self:GetEndReload() and clip > 0) then
+            if self:GetReloadFinishTime() - CurTime() <= 0.3 then
+                self:EndReload()
+            end
+        end
+    end
+end
+
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm) -- different animations for grip stocks
+    ent:SetPoseParameter("owo", swep:GetElements()["eft_grippose"] and 1 or 0)
+end
+
+
 
 local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.ogg","arc9_eft_shared/weapon_generic_rifle_spin2.ogg","arc9_eft_shared/weapon_generic_rifle_spin3.ogg","arc9_eft_shared/weapon_generic_rifle_spin4.ogg","arc9_eft_shared/weapon_generic_rifle_spin5.ogg","arc9_eft_shared/weapon_generic_rifle_spin6.ogg","arc9_eft_shared/weapon_generic_rifle_spin7.ogg","arc9_eft_shared/weapon_generic_rifle_spin8.ogg","arc9_eft_shared/weapon_generic_rifle_spin9.ogg","arc9_eft_shared/weapon_generic_rifle_spin10.ogg"}
 local pouchin = {"arc9_eft_shared/generic_mag_pouch_in1.ogg","arc9_eft_shared/generic_mag_pouch_in2.ogg","arc9_eft_shared/generic_mag_pouch_in3.ogg","arc9_eft_shared/generic_mag_pouch_in4.ogg","arc9_eft_shared/generic_mag_pouch_in5.ogg","arc9_eft_shared/generic_mag_pouch_in6.ogg","arc9_eft_shared/generic_mag_pouch_in7.ogg"}
@@ -280,168 +281,283 @@ local shell_in = {path .. "mr133_shell_in_mag2.ogg", path .. "mr133_shell_in_mag
 
 local look = {
     { s = randspin, t = 0.04 },
-    { s = randspin, t = 1.11 },
-    { s = randspin, t = 2.09 },
-    { s = randspin, t = 2.54 },
+    { s = randspin, t = 1.5 },
+    -- { s = randspin, t = 1.9 },
+    { s = randspin, t = 2.7 },
+    { s = randspin, t = 3.5 },
 }
 local magcheck = {
     { s = randspin, t = 0.1 },
     { s = path .. "mr133_magcover.ogg", t = 0.31 },
-    { s = path .. "mr133_magcover.ogg", t = 0.82 },
-    { s = randspin, t = 0.89 },
+    { s = path .. "mr133_magcover.ogg", t = 0.99, v = 0.4, p = 125 },
+    { s = randspin, t = 1.1 },
 }
 local checkchamber = {
     { s = randspin, t = 0.05 },
-    { s = path .. "rem870_pump_in.ogg", t = 0.27 },
-    { s = path .. "rem870_pump_out.ogg", t = 0.76 },
-    { s = randspin, t = 0.89 },
+    { s = path .. "rem870_pump_in.ogg", t = 0.4 },
+    { s = path .. "rem870_pump_out.ogg", t = 1.2 },
+    { s = randspin, t = 1.1 },
 }
 
+local rhikalways = {
+    { t = 0, lhik = 1, rhik = 1 },
+    { t = 1, lhik = 1, rhik = 1 },
+} 
+local rhiknever = {
+    { t = 0, lhik = 1, rhik = 0 },
+    { t = 1, lhik = 1, rhik = 0 },
+} 
+local rhikmaybe = {
+    { t = 0, lhik = 1, rhik = 1 },
+    { t = 0.05, lhik = 1, rhik = 0 },
+    { t = 0.92, lhik = 1, rhik = 0 },
+    { t = 1, lhik = 1, rhik = 1 },
+} 
+local rhikmaybe2 = {
+    { t = 0, lhik = 1, rhik = 1 },
+    { t = 0.2, lhik = 1, rhik = 0 },
+    { t = 0.8, lhik = 1, rhik = 0 },
+    { t = 1, lhik = 1, rhik = 1 },
+} 
+
 SWEP.Animations = {
-    ["idle"] = { Source = "idle",
-    IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1 },
-        { t = 1, lhik = 1, rhik = 1 },
-    } },
+    ["idle"] = { 
+        Source = "idle",
+        IKTimeLine = rhikalways
+    },
 
-    ["ready"] = { Source = {"ready0","ready1","ready2"}, EventTable = {
-        { s = path .. "mr133_draw.ogg", t = 0 },
-        { s = path .. "rem870_pump_in.ogg", t = 0.25 },
-        { s = path .. "rem870_pump_out.ogg", t = 0.4 },
-        { s = randspin, t = 0.76 },
-    } },
+    ["ready"] = { 
+        Source = {"ready0"}, 
+        EventTable = {
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
+            { s = path .. "rem870_pump_in.ogg", t = 0.33 },
+            { s = path .. "rem870_pump_out.ogg", t = 0.66 },
+            { s = randspin, t = 1.2 },
+        },
+        IKTimeLine = rhikalways
+    },
 
-    ["draw"] = { Source = "draw", EventTable = { { s = path .. "mr133_draw.ogg", t = 0 } } },
-    ["holster"] = { Source = "holster", EventTable = { { s = path .. "mr133_holster.ogg", t = 0 } } },
+    ["draw"] = { 
+        Source = "draw", 
+        EventTable = { 
+            { s = "arc9_eft_shared/weap_in.ogg", t = 0 } 
+        },
+        IKTimeLine = rhikmaybe
+    },
+    ["holster"] = { 
+        Source = "holster", 
+        EventTable = { 
+            { s = "arc9_eft_shared/weap_out.ogg", t = 0 } 
+        },
+        IKTimeLine = rhikmaybe
+    },
 
-    ["fire"] = { Source = "fire_sa", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } }, NoIdle = true },
+    ["fire"] = { 
+        Source = "dryfire", 
+        EventTable = { 
+            { s = path .. "mr133_trigger.wav", t = 0 } 
+        },
+        IKTimeLine = rhikmaybe,
+        NoIdle = true 
+    },
 
-    ["dryfire"] = { Source = "dryfire", EventTable = { { s = path .. "mr133_trigger.wav", t = 0 } } },
+    ["dryfire"] = { 
+        Source = "dryfire", 
+        EventTable = { 
+            { s = path .. "mr133_trigger.wav", t = 0 } 
+        } ,
+        IKTimeLine = rhikmaybe
+    },
 
-    ["cycle"] = { Source = {"pump0", "pump1", "pump2"}, EventTable = {
-        { s = randspin, t = 0.05 },
-        { s = path .. "rem870_pump_in.ogg", t = 0.15 },
-        { s = path .. "rem870_pump_out.ogg", t = 0.25 },
-        { s = randspin, t = 0.71 },
-    } },
+    ["cycle"] = { 
+        Source = {"pump0", "pump1", "pump2"}, 
+        EventTable = {
+            -- { s = randspin, t = 0.0 },
+            { s = path .. "rem870_pump_in.ogg", t = 0.0 },
+            { s = path .. "pump_jam_extract.ogg", t = 0.0 },
+            { s = path .. "rem870_pump_out.ogg", t = 0.18 },
+            { s = randspin, t = 0.1 },
+        } ,
+        IKTimeLine = rhikmaybe
+    },
 
     ["inspect"] = { -- shutup arc9 we have inspect
         Source = "idle",
         Time = 0.05,
     },
     
-    ["look"] = { Source = "look", MinProgress = 0.95, FireASAP = true, EventTable = look },
-    ["look_empty"] = { Source = "look_empty", MinProgress = 0.95, FireASAP = true, EventTable = look },
+    ["look"] = { 
+        Source = "look", 
+        MinProgress = 0.95, 
+        FireASAP = true, 
+        EventTable = look,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.1, lhik = 0, rhik = 1 },
+            { t = 0.8, lhik = 0, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        }, 
+    },
+    ["look_pg"] = { 
+        Source = "look_pg", 
+        MinProgress = 0.95, 
+        FireASAP = true, 
+        EventTable = look,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.1, lhik = 0, rhik = 0 },
+            { t = 0.8, lhik = 0, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 1 },
+        }, 
+    },
 
-    ["magcheck"] = { Source = "magcheck", MinProgress = 0.95, FireASAP = true, EventTable = magcheck,
-    IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1 },
-        { t = 0.17, lhik = 0, rhik = 1 },
-        { t = 0.72, lhik = 0, rhik = 1 },
-        { t = 0.95, lhik = 1, rhik = 1 },
-        { t = 1, lhik = 1, rhik = 1 },
-    }, },
-    ["magcheck_empty"] = { Source = "magcheck_empty", MinProgress = 0.95, FireASAP = true, EventTable = magcheck,
-    IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1 },
-        { t = 0.17, lhik = 0, rhik = 1 },
-        { t = 0.72, lhik = 0, rhik = 1 },
-        { t = 0.95, lhik = 1, rhik = 1 },
-        { t = 1, lhik = 1, rhik = 1 },
-    }, },
+    ["magcheck"] = { 
+        Source = "magcheck",
+        MinProgress = 0.95,
+        FireASAP = true,
+        EventTable = magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.2, lhik = 0, rhik = 1 },
+            { t = 0.65, lhik = 0, rhik = 1 },
+            { t = 0.95, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        }, 
+    },
+    ["magcheck_empty"] = { 
+        Source = "magcheck_empty",
+        MinProgress = 0.95,
+        FireASAP = true,
+        EventTable = magcheck,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.2, lhik = 0, rhik = 1 },
+            { t = 0.65, lhik = 0, rhik = 1 },
+            { t = 0.95, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        }, 
+    },
 
-    ["checkchamber"] = { Source = "checkchamber", MinProgress = 0.95, FireASAP = true, EventTable = checkchamber },
-    ["checkchamber_empty"] = { Source = "checkchamber_empty", MinProgress = 0.95, FireASAP = true, EventTable = checkchamber },
+    ["checkchamber"] = { 
+        Source = "checkchamber",
+        MinProgress = 0.95,
+        FireASAP = true,
+        EventTable = checkchamber,
+        IKTimeLine = rhikmaybe2
+    },
+    ["checkchamber_empty"] = { 
+        Source = "checkchamber_empty",
+        MinProgress = 0.95,
+        FireASAP = true,
+        EventTable = checkchamber,
+        IKTimeLine = rhikmaybe2
+    },
 
     ["toggle"] = {        Source = "mod_switch", EventTable = switchi },
     ["switchsights"] = {  Source = "mod_switch", EventTable = switchi },
 
-    
-    ["reload_start_empty"] = { Source = {"reload_start_empty0", "reload_start_empty2"}, RestoreAmmo = 1, EventTable = { 
-        { s = path .. "rem870_pump_in.ogg", t = 0 },
-        { s = randspin, t = 0.14 },
-        { s = path .. "mr133_shell_pickup.ogg", t = 0.42 },
-        { s = path .. "mr133_shell_in_port.ogg", t = 0.87 },
-        { s = randspin, t = 1.16 },
-        { s = path .. "rem870_pump_out.ogg", t = 1.23 },
-        { s = randspin, t = 1.35 },
+    ["reload_start_empty"] = { 
+        Source = "reload_start_empty0", 
+        RestoreAmmo = 1, 
+        EventTable = { 
+            { s = path .. "rem870_pump_in.ogg", t = 0 },
+            { s = randspin, t = 0.2 },
+            { s = path .. "mr133_shell_pickup.ogg", t = 0.3 },
+            { s = path .. "mr133_shell_in_port.ogg", t = 0.9 },
+            { s = randspin, t = 1.16 },
+            { s = path .. "rem870_pump_out.ogg", t = 1.6 },
+            { s = randspin, t = 1.35 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.16, lhik = 1, rhik = 1 },
+            { t = 0.33, lhik = 1, rhik = 0 },
+            { t = 0.53, lhik = 1, rhik = 0 },
+            { t = 0.66, lhik = 1, rhik = 1 },
+            { t = 0.79, lhik = 1, rhik = 1 },
+            { t = 0.97, lhik = 0, rhik = 1 },
+            { t = 1, lhik = 0, rhik = 1 },
+        }
     },
-    IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1 },
-        { t = 0.05, lhik = 1, rhik = 1 },
-        { t = 0.16, lhik = 0, rhik = 1 },
-        { t = 0.54, lhik = 0, rhik = 1 },
-        { t = 0.67, lhik = 1, rhik = 1 },
-        { t = 0.72, lhik = 1, rhik = 1 },
-        { t = 0.87, lhik = 0, rhik = 1 },
-        { t = 1, lhik = 0, rhik = 1 },
-    }},
+    ["1_reload_start_empty"] = { 
+        Source = "reload_start_empty1", 
+        RestoreAmmo = 1, 
+        EventTable = { 
+            { s = path .. "rem870_pump_in.ogg", t = 0 },
+            { s = randspin, t = 0.2 },
+            { s = path .. "mr133_shell_pickup.ogg", t = 0.3 },
+            { s = path .. "mr133_shell_in_port.ogg", t = 0.7 },
+            { s = randspin, t = 1.0 },
+            { s = path .. "rem870_pump_out.ogg", t = 1.14 },
+            { s = randspin, t = 1.35 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.07, lhik = 1, rhik = 1 },
+            { t = 0.19, lhik = 0, rhik = 1 },
+            { t = 0.63, lhik = 0, rhik = 1 },
+            { t = 0.76, lhik = 1, rhik = 1 },
+            { t = 0.81, lhik = 1, rhik = 1 },
+            { t = 0.92, lhik = 0, rhik = 1 },
+            { t = 1, lhik = 0, rhik = 1 },
+        }
+    },
 
-    ["reload_start2"] = { Source = "reload_start2", RestoreAmmo = 1, EventTable = {
-        { s = randspin, t = 0.03 },
-        { s = path .. "mr133_shell_pickup.ogg", t = 0.33 },
-        { s = randspin, t = 0.62 },
-        { s = path .. "mr133_magcover.ogg", t = 0.88 },
-        { s = shell_in, t = 1.0 },
+    ["reload_start"] = { 
+        Source = {"reload_start0", "reload_start1", "reload_start2"}, 
+        EventTable = {
+            { s = randspin, t = 0.03 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.03, lhik = 1, rhik = 0 },
+            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 1, lhik = 0, rhik = 0 },
+        }
     },
-    IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1 },
-        { t = 0.3, lhik = 0, rhik = 1 },
-        { t = 1, lhik = 0, rhik = 1 },
-    }},
-    ["reload_loop"] = { Source = "reload_loop", EventTable = {
-        { s = path .. "mr133_shell_pickup.ogg", t = 0.18 },
-        { s = randspin, t = 0.22 },
-        { s = path .. "mr133_magcover.ogg", t = 0.49 },
-        { s = shell_in, t = 0.59 },
+    ["reload_insert"] = { 
+        Source = {"reload_loop0", "reload_loop1", "reload_loop2", "reload_loop3", "reload_loop4", "reload_loop5"}, 
+        EventTable = {
+            { s = path .. "mr133_shell_pickup.ogg", t = 0.0, v = 0.5 },
+            -- { s = randspin, t = 0.22 },
+            { s = path .. "mr133_magcover.ogg", t = 0.1 },
+            { s = shell_in, t = 0.25 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 0, rhik = 1 },
+            { t = 1, lhik = 0, rhik = 1 },
+        },
+        MinProgress = 0.7,
+        Mult = 1
     },
-    IKTimeLine = {
-        { t = 0, lhik = 0, rhik = 1 },
-        { t = 1, lhik = 0, rhik = 1 },
+    ["reload_finish"] = { 
+        Source = "reload_end", 
+        EventTable = {
+            { s = randspin, t = 0.1 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 0, rhik = 1 },
+            { t = 0.1, lhik = 0, rhik = 1 },
+            { t = 0.6, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        }
     },
-    Mult = 0.85},
-    ["reload_loop2"] = { Source = "reload_loop2", EventTable = {
-        { s = path .. "mr133_shell_pickup.ogg", t = 0.31 },
-        { s = randspin, t = 0.41 },
-        { s = path .. "mr133_magcover.ogg", t = 0.73 },
-        { s = shell_in, t = 0.83 },
-    },
-    IKTimeLine = {
-        { t = 0, lhik = 0, rhik = 1 },
-        { t = 1, lhik = 0, rhik = 1 },
-    },
-    Mult = 0.85},
-    ["reload_end"] = { Source = "reload_end", EventTable = {
-        { s = randspin, t = 0.28 },
-    },
-    IKTimeLine = {
-        { t = 0, lhik = 0, rhik = 1 },
-        { t = 0.5, lhik = 0, rhik = 1 },
-        { t = 1, lhik = 1, rhik = 1 },
-    }},
-    ["reload_end2"] = { Source = "reload_end2", EventTable = {
-        { s = randspin, t = 0.15 },
-    },
-    IKTimeLine = {
-        { t = 0, lhik = 0, rhik = 1 },
-        { t = 1, lhik = 1, rhik = 1 },
-    }},
 
-    
     ["jam_1"] = {
         Source = "jam_shell", -- jam shell
         EventTable = {
             { s = path .. "rem870_pump_in.ogg", t = 0 },
-            { s = path .. "pump_jam_slidelock_try1.ogg", t = 0.2 },
-            { s = randspin, t = 0.48 },
-            { s = randspin, t = 1 },
-            { s = randspin, t = 1.3 },
-            { s = path .. "pump_jam_slidelock_try2.ogg", t = 1.55 },
-            { s = path .. "pump_jam_shell_out2.ogg", t = 1.68 },
-            { s = randspin, t = 1.96 },
-            { s = path .. "pump_jam_slidelock_try3.ogg", t = 2.26 },
-            { s = path .. "rem870_pump_out.ogg", t = 2.46 },
-            { s = randspin, t = 2.7 },
+            { s = path .. "pump_jam_slidelock_try2.ogg", t = 0.6 },
+            { s = randspin, t = 1.1 },
+            { s = randspin, t = 1.8 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "pump_jam_slidelock_try3.ogg", t = 2.77 },
+            { s = path .. "pump_jam_slidelock_try4.ogg", t = 3.1 },
+            { s = path .. "pump_jam_shell_out2.ogg", t = 3.3 },
+            { s = randspin, t = 3.44 },
+            { s = path .. "rem870_pump_out.ogg", t = 3.85 },
+            { s = randspin, t = 4.1 },
+            { s =  ARC9EFT.Shells12cal, t = 4.1 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
@@ -452,15 +568,17 @@ SWEP.Animations = {
         Source = "jam_feed", -- jam feed
         EventTable = {
             { s = path .. "rem870_pump_in.ogg", t = 0 },
-            { s = path .. "pump_jam_slidelock_try2.ogg", t = 0.23 },
-            { s = randspin, t = 0.49 },
-            { s = randspin, t = 1.01 },
-            { s = randspin, t = 1.44 },
-            { s = randspin, t = 1.61 },
-            { s = path .. "pump_jam_shell_out1.ogg", t = 1.68 },
-            { s = randspin, t = 2.4 },
-            { s = path .. "rem870_pump_out.ogg", t = 2.92 },
-            { s = randspin, t = 3.21 },
+            { s = path .. "pump_jam_slidelock_try2.ogg", t = 0.66 },
+            { s = randspin, t = 1.1 },
+            { s = randspin, t = 1.8 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "pump_jam_slidelock_try3.ogg", t = 2.8 },
+            { s = path .. "longweapon_jam_rattle5.ogg", t = 3.2 },
+            { s = randspin, t = 3.65 },
+            { s = path .. "pump_jam_shell_out1.ogg", t = 4.19 },
+            { s = path .. "rem870_pump_out.ogg", t = 5.45 },
+            { s = randspin, t = 5.6 },
+            { s =  ARC9EFT.Shells12cal, t = 5.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
@@ -471,20 +589,23 @@ SWEP.Animations = {
         Source = "jam_hardslide", -- jam hard
         EventTable = {
             { s = path .. "pump_jam_slidelock_try2.ogg", t = 0 },
-            { s = randspin, t = 0.49 },
-            { s = randspin, t = 1 },
-            { s = randspin, t = 1.3 },
-            { s = path .. "pump_jam_slidelock_try4.ogg", t = 1.57 },
-            { s = path .. "pump_jam_slidelock_try1.ogg", t = 1.92 },
-            { s = randspin, t = 2.18 },
-            { s = path .. "pump_jam_slidelock_try3.ogg", t = 2.88 },
-            { s = randspin, t = 3.14 },
-            { s = randspin, t = 3.85 },
-            { s = path .. "rem870_pump_out.ogg", t = 3.93 },
-            { s = path .. "rem870_pump_in.ogg", t = 3.3 },
-            { s = randspin, t = 4.51 },
+            { s = randspin, t = 1.1 },
+            { s = randspin, t = 1.8 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "pump_jam_slidelock_try4.ogg", t = 2.82 },
+            { s = path .. "pump_jam_slidelock_try2.ogg", t = 3.2 },
+            { s = randspin, t = 3.45 },
+            -- { s = path .. "longweapon_jam_rattle2.ogg", t = 2.68 },
+            -- { s = path .. "pump_jam_slidelock_try3.ogg", t = 3.9 },
+            -- { s = randspin, t = 3.9 },
+            -- { s = path .. "pump_jam_slidelock_try4.ogg", t = 4.3 },
+            { s = path .. "rem870_pump_out.ogg", t = 4.18 },
+            { s = path .. "pump_jam_extract.ogg", t = 4.3 },
+            { s = randspin, t = 4.4 },
+            { s = path .. "rem870_pump_in.ogg", t = 4.85 },
+            { s = randspin, t = 5.13 },
         },
-        EjectAt = 4.04,
+        EjectAt = 4.3,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
             { t = 1, lhik = 1, rhik = 1 },
@@ -494,24 +615,47 @@ SWEP.Animations = {
         Source = "jam_softslide", -- jam soft
         EventTable = {
             { s = path .. "pump_jam_slidelock_try2.ogg", t = 0 },
-            { s = randspin, t = 0.48 },
-            { s = randspin, t = 0.99 },
-            { s = randspin, t = 1.3 },
-            { s = path .. "pump_jam_slidelock_try1.ogg", t = 1.58 },
-            { s = path .. "pump_jam_slidelock_try4.ogg", t = 1.9 },
-            { s = randspin, t = 2.21 },
-            { s = path .. "rem870_pump_out.ogg", t = 2.63 },
-            { s = randspin, t = 2.92 },
-            { s = path .. "rem870_pump_in.ogg", t = 3.3 },
-            { s = randspin, t = 3.5 },
+            { s = randspin, t = 1.1 },
+            { s = randspin, t = 1.8 },
+            { s = randspin, t = 2.3 },
+            { s = path .. "pump_jam_slidelock_try2.ogg", t = 2.9 },
+            { s = path .. "rem870_pump_out.ogg", t = 3.18 },
+            { s = randspin, t = 3.4 },
+            { s = path .. "pump_jam_extract.ogg", t = 3.35 },
+            { s = path .. "rem870_pump_in.ogg", t = 3.9 },
+            { s = randspin, t = 4.2 },
         },
-        EjectAt = 2.76,
+        EjectAt = 3.35,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
             { t = 1, lhik = 1, rhik = 1 },
         }
     },
 
+    ["enter_bipod"] = {
+        Source = "action",
+        EventTable = {
+            { s = { "weapons/darsu_eft/bipod/bipod_atlas_unfold_1.ogg", "weapons/darsu_eft/bipod/bipod_atlas_unfold_2.ogg", "weapons/darsu_eft/bipod/bipod_atlas_unfold_3.ogg" }, t = 0.0 },
+            { s = { "weapons/darsu_eft/bipod/bipod_stand_on_1.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_2.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_3.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_4.ogg", "weapons/darsu_eft/bipod/bipod_stand_on_5.ogg" }, t = 0.2 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.5, lhik = 0, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
+    },
+
+    ["exit_bipod"] = {
+        Source = "action",
+        EventTable = {
+            { s = { "weapons/darsu_eft/bipod/bipod_atlas_fold_1.ogg", "weapons/darsu_eft/bipod/bipod_atlas_fold_2.ogg", "weapons/darsu_eft/bipod/bipod_atlas_fold_3.ogg" }, t = 0.0 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.5, lhik = 0, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
+    },
 }
 
 ------------------------- |||           Attachments            ||| -------------------------

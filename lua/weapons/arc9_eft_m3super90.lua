@@ -714,7 +714,7 @@ SWEP.EFTRequiredAtts = { "HasMag", "HasBolt", "HasGrip", "HasHG", "HasBarrel", "
 SWEP.AttachmentElements = {
     ["eft_m3s90_barrel_std"] = { Bodygroups = { {1, 1} } },
     ["eft_m3s90_hg_std"] = { Bodygroups = { {2, 1} } },
-    ["eft_m3s90_stock_std"] = { Bodygroups = { {4, 1}, {3, 1} } },
+    ["eft_m3s90_stock_std"] = { Bodygroups = { {3, 1} } },
     -- ["eft_m3s90_stock_unfolded"] = { Bodygroups = { {3, 1} } },
     -- ["eft_m3s90_stock_folded"] = { Bodygroups = { {3, 1} } },
     ["eft_m3s90_stock_urba"] = { Bodygroups = { {3, 3} } },
