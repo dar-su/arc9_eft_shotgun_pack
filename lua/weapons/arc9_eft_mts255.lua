@@ -10,6 +10,7 @@ SWEP.Description = ARC9:GetPhrase("eft_weapon_mts25512_desc")
 
 SWEP.Class = ARC9:GetPhrase("eft_class_weapon_revol")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_sg")
+SWEP.ARC9WeaponCategory = ARC9.WEAPON_SHOTGUN
 
 SWEP.Trivia = {
     ["eft_trivia_manuf1"] = "eft_trivia_manuf_tskib",
